@@ -9,3 +9,10 @@ The formats are:
 This script does not provide you with the entire html o latex document, 
 only provides well formated content that should be placed by hand (at least
 for this version) in your templates.
+
+## Development setup
+1. Install python
+2. Install PIP
+3. Create your environment: `$ python3 -m venv env`
+4. Activate your environment: `$ source env/bin/activate`
+5. Deactivate your environment: `$ deactivate`

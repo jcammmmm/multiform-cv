@@ -1,0 +1,54 @@
+name: Juan Camilo
+profile: >
+  Computer Systems Engineer with about 4+ years of experience in Software Engineering
+  and Development. Professional with proficient skills in Mathematics, Software
+  Development, Software Architecture and Software Design. Highly motivated by reaching
+  goals and measurements. Agile learner. Up-to-date with State of the Art in software
+  construction and implementation techniques. Engineer committed with organizations
+  mission statements and a complete disposal to teamwork. Speaks English and Portuguese.
+experience:
+  - 
+    company: Credera
+    focusAreas: 
+      - Stream Processing
+      - Microservices
+      - Computer Graphics
+    jobTitle: Senior Java Software Developer
+    period: 
+      from: 2021-11-01
+      to: 2099-12-31
+    location:
+      country: United States 
+      flagFileName: flag-usa.png
+    tools: [C/C++, Blender, Kafka, Java 11, AWS, Postgres, Spring Boot, Kubernetes]
+    tasks:
+      - Re-implementation of Java7 legacy monoliths to Java11 microservices.
+      - Write several Kafka consumer-producers for the user-engagement streaming pipelines.
+      - Blender (C/C++) source code reverse engineering in order to understand and replicate Ghost UI for desktop applications.
+      - Build scripting with CMake.
+      - Develop a complete template file for work with Vulkan (C/C++) API.
+      - Microservices development with Spring Boot.
+      - Custom libraries development for microservices and ERP processing units that share the same business logic.
+      - Member of DE\&I committee (marketing pillar).
+  - 
+    company: Claro
+    focusAreas: 
+      - BigData Processing
+      - Microservices
+    jobTitle: Java Software Developer
+    period: 
+      from: 2020-02-01
+      to: 2021-11-30
+    location:
+      country: Brazil 
+      flagFileName: flag-brazil.png
+    tools: [Java 11, Apache Flume - Flink - Kafka - Camel, MongoDB, Spring Boot, OpenShift]
+    tasks:
+      - Microservices development with Spring Boot, Quarkus and Django. Some examples can be seen \textbf{\href{https://github.com/VanJFlorez/flink-kafka-fraud-detection}{here}}
+      - Big Data processing components using Apache Kafka, Flink, Flume and Camel.
+      - Batch Scripts and Java programs to automate Docker images builds and storage within Docker Hub cloud registry.
+      - Deployments in Openshift Container Platform pre-production environments. This includes scripts for builds and image stress tests.
+      - Provide mentorship for Junior and entry-level developers.
+      - Take part as technical expert in 'MiClaro App' UI enhancements project.
+
+
