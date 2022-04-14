@@ -2,6 +2,7 @@ from yaml import load
 from pprint import pprint
 from dotenv import load_dotenv
 import tex.gen
+import html.gen
 import os
 
 load_dotenv()
@@ -21,8 +22,12 @@ def main():
     cv_data = load(data, Loader=Loader)
     cv_data['email'] = os.getenv('CV_PERSONAL_EMAIL')
     cv_data['phone'] = os.getenv('CV_PERSONAL_PHONE')
+
     cv_tex = tex.gen.latex_generator(cv_data)
     open('../cv.tex', 'w').write(cv_tex)
+
+    cv_html = html.gen.html_generator(cv_data)
+    open('../cv.html', 'w').write(cv_html)
     
 if __name__ == '__main__':
     main()

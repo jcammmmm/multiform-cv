@@ -1,6 +1,9 @@
 from jinja2 import Environment, PackageLoader, select_autoescape
 from utils.formmating import format_date_period
 
+def to_valid_id(string):
+    return '_'.join(string.split(' '))
+
 def decorate_task_descr(task):
     descr = task['descr']
     if descr == None:
@@ -10,28 +13,25 @@ def decorate_task_descr(task):
     if 'heres' in task.keys():
         i = 0
         for _ in task['heres']:
-            descr = descr.replace('HERE', '\\textbf{\\href{%s}{here}}'%task['heres'][i], 1)
+            descr = descr.replace('HERE', '<i><a href="%s">here</a></i>'%task['heres'][i], 1)
             i += 1
     if 'bolds' in task.keys():
         for b in task['bolds']:
-            descr = descr.replace(b, '\\textbf{%s}'%b)
+            descr = descr.replace(b, '<strong>%s</strong>'%b)
     if 'italics' in task.keys():
         for it in task['italics']:
-            descr = descr.replace(it, '\\textit{%s}'%it)
+            descr = descr.replace(it, '<i>%s</i>'%it)
     return descr
 
-def latex_generator(cv_data):
+def html_generator(cv_data):
     env = Environment(
-        loader=PackageLoader('tex'),
-        autoescape=select_autoescape(),
-        variable_start_string='==',
-        variable_end_string='==',
-        block_start_string='=%',
-        block_end_string='%=',
+        loader=PackageLoader('html'),
+        autoescape=False,
         trim_blocks=True,
     )
-    env.filters['decorate_task_descr'] = decorate_task_descr
+    env.filters['to_valid_id'] = to_valid_id
     env.filters['format_date_period'] = format_date_period
+    env.filters['decorate_task_descr'] = decorate_task_descr
 
-    template = env.get_template('cv-template.tex')
+    template = env.get_template('cv-template.html')
     return template.render(cv=cv_data)

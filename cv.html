@@ -169,7 +169,8 @@
 <p>
 	<b>Camilo Florez</b>
 	(<small>Spanish:&nbsp;</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="https://en.wikipedia.org/wiki/Help:IPA/Spanish" title="Help:IPA/Spanish">[ka'milo floɾ'es]</a></span>)
-	is a {{cv.profile}}
+	is a Computer Systems Engineer with about 4+ years of experience in Software Engineering and Development. Professional with proficient skills in Mathematics, Software Development, Software Architecture and Software Design. Highly motivated by reaching goals and measurements. Agile learner. Up-to-date with State of the Art in software construction and implementation techniques. Engineer committed with organizations mission statements and a complete disposal to teamwork. Speaks English and Portuguese.
+
 </p>
 
 
@@ -191,15 +192,37 @@
 				<span class="toctext">Recent Experience</span>
 			</a>
 			<ul>
-				{% for exp in cv.experience %}
-				<li class="toclevel-2">
-					<a href="#{{exp.name|to_valid_id}}">
-						<span class="tocnumber">1.{{ loop.index }}</span> 
-						<span class="toctext">{{exp.name}}</span>
+								<li class="toclevel-2">
+					<a href="#Credera">
+						<span class="tocnumber">1.1</span> 
+						<span class="toctext">Credera</span>
 					</a>
 				</li>
-				{% endfor %}
-			</ul>
+								<li class="toclevel-2">
+					<a href="#Claro">
+						<span class="tocnumber">1.2</span> 
+						<span class="toctext">Claro</span>
+					</a>
+				</li>
+								<li class="toclevel-2">
+					<a href="#Zyos">
+						<span class="tocnumber">1.3</span> 
+						<span class="toctext">Zyos</span>
+					</a>
+				</li>
+								<li class="toclevel-2">
+					<a href="#Centro_de_Pensamiento_en_Universidad_Nacional">
+						<span class="tocnumber">1.4</span> 
+						<span class="toctext">Centro de Pensamiento en Universidad Nacional</span>
+					</a>
+				</li>
+								<li class="toclevel-2">
+					<a href="#Grupo_Sepro_en_Universidad_Nacional">
+						<span class="tocnumber">1.5</span> 
+						<span class="toctext">Grupo Sepro en Universidad Nacional</span>
+					</a>
+				</li>
+							</ul>
 		</li>
 		<li class="toclevel-1">
 			<a href="#Education">
@@ -234,39 +257,96 @@
 <!-- ......................................................................................... -->
 <!-- ......................................................................................... -->
 <h2><span class="mw-headline" id="Recent_Experience">Recent Experience</span></h2>
-	{% for exp in cv.experience %}
-	<h3>
-		<span class="mw-headline" id="{{exp.name|to_valid_id}}">{{exp.name}}</span>
-		<span class="mw-editsection"><i>{{exp.focusAreas|join(', ')}}</i></span>
+		<h3>
+		<span class="mw-headline" id="Credera">Credera</span>
+		<span class="mw-editsection"><i>Stream Processing, Microservices, Computer Graphics</i></span>
 	</h3>
 	<h4 style="margin-top: 0px;padding-top: 0px;">
-		<span class="mw-headline" id="Credera"><i>{{exp.jobTitle}}</i></span>
+		<span class="mw-headline" id="Credera"><i>Senior Java Software Developer</i></span>
 	</h4>
-	<div role="note" style="margin-bottom: 0px;" class="hatnote navigation-not-searchable">{{exp.period|format_date_period}}</div>
-	<span class="mw-editsection" style="margin-left: 0px;padding-left: 22.4px;">(Tools/Tech. stack) {{exp.tools|join(', ')}}</span>
+	<div role="note" style="margin-bottom: 0px;" class="hatnote navigation-not-searchable">Nov 2021 - Current</div>
+	<span class="mw-editsection" style="margin-left: 0px;padding-left: 22.4px;">(Tools/Tech. stack) C/C++, Blender, Kafka, Java 11, AWS, Postgres, Spring Boot, Kubernetes</span>
 	<ul>
-		{% for task in exp.tasks %}
-		<li>{{task|decorate_task_descr}}</li>
-		{% endfor %}
-	</ul>
-	{% endfor %}
-
+				<li>Re-implementation of Java7 legacy <i>monoliths</i> to Java11 <i>microservices</i>.</li>
+				<li>Write several <i>Kafka</i> consumer-producers for the user-engagement streaming pipelines.</li>
+				<li>Blender (C/C++) source code reverse engineering in order to understand and replicate Ghost UI for desktop applications.</li>
+				<li>Build scripting with CMake.</li>
+				<li>Develop a complete template file for work with Vulkan (C/C++) API.</li>
+				<li>Microservices development with Spring Boot.</li>
+				<li>Custom libraries development for microservices and ERP processing units that share the same business logic.</li>
+				<li>Member of DE\&I committee (marketing pillar).</li>
+			</ul>
+		<h3>
+		<span class="mw-headline" id="Claro">Claro</span>
+		<span class="mw-editsection"><i>BigData Processing, Microservices</i></span>
+	</h3>
+	<h4 style="margin-top: 0px;padding-top: 0px;">
+		<span class="mw-headline" id="Credera"><i>Java Software Developer</i></span>
+	</h4>
+	<div role="note" style="margin-bottom: 0px;" class="hatnote navigation-not-searchable">Feb 2020 - Nov 2021</div>
+	<span class="mw-editsection" style="margin-left: 0px;padding-left: 22.4px;">(Tools/Tech. stack) Java 11, Apache Flume - Flink - Kafka - Camel, MongoDB, Spring Boot, OpenShift</span>
+	<ul>
+				<li>Microservices development with Spring Boot, Quarkus and Django. Some examples can be seen <i><a href="https://github.com/VanJFlorez/flink-kafka-fraud-detection">here</a></i>.</li>
+				<li>Big Data processing components using Apache Kafka, Flink, Flume and Camel.</li>
+				<li>Batch Scripts and Java programs to automate Docker images builds and storage within Docker Hub cloud registry.</li>
+				<li>Deployments in Openshift Container Platform pre-production environments. This includes scripts for builds and image stress tests.</li>
+				<li>Provide mentorship for Junior and entry-level developers.</li>
+				<li>Take part as technical expert in 'MiClaro App' UI enhancements project.</li>
+			</ul>
+		<h3>
+		<span class="mw-headline" id="Zyos">Zyos</span>
+		<span class="mw-editsection"><i>Backend Monolith Developer, Server Side UI Rendering</i></span>
+	</h3>
+	<h4 style="margin-top: 0px;padding-top: 0px;">
+		<span class="mw-headline" id="Credera"><i>FullStack Software Developer</i></span>
+	</h4>
+	<div role="note" style="margin-bottom: 0px;" class="hatnote navigation-not-searchable">Jan 2019 - Feb 2020</div>
+	<span class="mw-editsection" style="margin-left: 0px;padding-left: 22.4px;">(Tools/Tech. stack) EJB, JSF, Primefaces, JPA (Hibernate), Angular 9, JavaScript (ES6), Maven, Git, Apache TomCat</span>
+	<ul>
+				<li>Made improvements to <i>Edificios Davivienda</i> App business core features.</li>
+				<li>Responsive front-end implementation and some styling improvements. Several JavaScript components (notifications, ratings, snackbars) to improve the user experience.</li>
+				<li>Backend software development to <i>Mi Vivienda BCP</i> App in order to boost and correct bugs in execution edge cases. New functionalities to the overall application. <i>Edificios Davivienda</i> available <i><a href="https://www.edificiosdavivienda.com">here</a></i> and <i>Mi Vivienda BCP</i> available <i><a href="https://www.miviviendabcp.com.bo">here</a></i>.</li>
+			</ul>
+		<h3>
+		<span class="mw-headline" id="Centro_de_Pensamiento_en_Universidad_Nacional">Centro de Pensamiento en Universidad Nacional</span>
+		<span class="mw-editsection"><i></i></span>
+	</h3>
+	<h4 style="margin-top: 0px;padding-top: 0px;">
+		<span class="mw-headline" id="Credera"><i>Software Engineer</i></span>
+	</h4>
+	<div role="note" style="margin-bottom: 0px;" class="hatnote navigation-not-searchable">Jun 2018 - Dec 2018</div>
+	<span class="mw-editsection" style="margin-left: 0px;padding-left: 22.4px;">(Tools/Tech. stack) Ruby, RubyOnRails, NGinX, PostgresSQL, Debian-Linux, Moodle, PHP, SSH, Heroku, Google Compute Engine, Git, Docker, Rancker</span>
+	<ul>
+				<li>Online course implementation with Moodle (available <i><a href="https://gitlab.com/VanJFlorez/animal_modeling_ethics/tree/master/docs/4 LMS build">here</a></i>) and a forum web application for that course with Thredded (available <i><a href="https://gitlab.com/VanJFlorez/animal_modeling_ethics/blob/master/docs/3\%20Social\%20WebApp/CP\%20etica\%20animal\%20webApp.pdf">here</a></i>). Full repository <i><a href="https://gitlab.com/VanJFlorez/animal_modeling_ethics/">here</a></i>.</li>
+			</ul>
+		<h3>
+		<span class="mw-headline" id="Grupo_Sepro_en_Universidad_Nacional">Grupo Sepro en Universidad Nacional</span>
+		<span class="mw-editsection"><i></i></span>
+	</h3>
+	<h4 style="margin-top: 0px;padding-top: 0px;">
+		<span class="mw-headline" id="Credera"><i>Software Developer</i></span>
+	</h4>
+	<div role="note" style="margin-bottom: 0px;" class="hatnote navigation-not-searchable">Jan 2018 - Jun 2018</div>
+	<span class="mw-editsection" style="margin-left: 0px;padding-left: 22.4px;">(Tools/Tech. stack) Python, Django, JavaScript, ExpressJS, Gunicorn, Apache HTTP Server, Git, VSCode, MySQL, Heroku</span>
+	<ul>
+				<li>Designed and implemented a survey information system that computes statistics and measurements. This survey system was used to evaluate the behavior and performance of Avocado and Sugar Cane derivatives supply chains from Cauca to Bogota.</li>
+				<li>Coordinated a team of 3 undergraduate students to achieve the project goals. Two of them worked in software development and the another one work in QA. Available <i><a href="https://gitlab.com/VanJFlorez/sepro-webapp">here</a></i>.</li>
+			</ul>
+	
 <!-- ......................................................................................... -->
 <!-- ......................................................................................... -->
 <!-- ......................................................................................... -->
 <!-- ......................................................................................... -->
 <!-- ......................................................................................... -->
 <h2><span class="mw-headline" id="Education">Education</span></h2>
-{% for edu in cv.education %}
 <h3>
-	<span class="mw-headline" id="Credera">{{edu.name}}</span>
+	<span class="mw-headline" id="Credera">Universidad Nacional de Colombia</span>
 </h3>
 <h4 style="margin-top: 0px;padding-top: 0px;">
-	<span class="mw-headline" id="Credera"><i>{{edu.degree}}</i></span>
+	<span class="mw-headline" id="Credera"><i>Software Engineering</i></span>
 </h4>
-<div role="note" style="margin-bottom: 0px;" class="hatnote navigation-not-searchable">{{edu.period|format_date_period}} | Bogotá</div>
-<span class="mw-editsection" style="margin-left: 0px;padding-left: 22.4px;">Cum. GPA {{edu.gpa.my}} / {{edu.gpa.over}}</span>
-{% endfor %}
+<div role="note" style="margin-bottom: 0px;" class="hatnote navigation-not-searchable">Jan 2016 - Dec 2020 | Bogotá</div>
+<span class="mw-editsection" style="margin-left: 0px;padding-left: 22.4px;">Cum. GPA 4.3 / 5.0</span>
 
 <!-- ......................................................................................... -->
 <!-- ......................................................................................... -->
@@ -275,14 +355,15 @@
 <!-- ......................................................................................... -->
 <h2><span class="mw-headline" id="Certs">Certificates</span></h2>
 <ul>
-	{% for cert in cv.certs %}
-		{% if cert.url is defined %}
-		<li>{{cert.name}}<a rel="nofollow" class="external text" href="{{cert.url}}"></a></li>
-		{% else %}
-		<li>{{cert.name}}</li>
-		{% endif %}
-	{% endfor %}
-</ul>
+					<li>B2 English Certification (IELTS)<a rel="nofollow" class="external text" href="file://locationpath"></a></li>
+							<li>C1 English Certification (EF)<a rel="nofollow" class="external text" href="https://www.efset.org/cert/j8ebfw"></a></li>
+							<li>Machine Learning with Big Data<a rel="nofollow" class="external text" href="https://www.coursera.org/account/accomplishments/certificate/8MS64GGYWDT5?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate"></a></li>
+							<li>Convolutional Neural Networks<a rel="nofollow" class="external text" href="https://www.coursera.org/account/accomplishments/certificate/KFN2XJC2KP92?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate"></a></li>
+							<li>Automate Stuff with Python<a rel="nofollow" class="external text" href="https://www.udemy.com/certificate/UC-ZHLLMBQA"></a></li>
+							<li>Econometrics (University)</li>
+							<li>Micro and Macroeconomics (University)</li>
+							<li>Economic History (University)</li>
+			</ul>
 
 <!-- ......................................................................................... -->
 <!-- ......................................................................................... -->
@@ -291,10 +372,10 @@
 <!-- ......................................................................................... -->
 <h2><span class="mw-headline" id="Social">Social</span></h2>
 <ul>
-	{% for social in cv.socialnetworks %}
-		<li><a href="{{social.url}}">{{social.name}}</a></li>
-	{% endfor %}
-</ul>
+			<li><a href="https://www.linkedin.com/in/vanjflores/">LinkedIn</a></li>
+			<li><a href="https://github.com/jcammmmm">GitHub</a></li>
+			<li><a href="https://gitlab.com/VanJFlorez">GitLab</a></li>
+	</ul>
 <!-- ......................................................................................... -->
 <!-- ......................................................................................... -->
 <!-- ......................................................................................... -->
@@ -304,31 +385,88 @@
 <ul>
 	<li>Programming Languages</li>
 	<ul>
-	{% for item in cv.skills.programmingLanguages %}
-		<li>{{item}}</li>
-	{% endfor %}
-	</ul>
+			<li>Java</li>
+			<li>C /++</li>
+			<li>Javascript</li>
+			<li>TypeScript</li>
+			<li>SQL</li>
+			<li>CSS</li>
+			<li>Python</li>
+			<li>Ruby</li>
+			<li>Bash</li>
+			<li>Batch</li>
+		</ul>
 
 	<li>Frameworks</li>
 	<ul>
-	{% for item in cv.skills.frameworks %}
-		<li>{{item}}</li>
-	{% endfor %}
-	</ul>
+			<li>Spring Boot</li>
+			<li>Quarkus</li>
+			<li>RubyOnRails</li>
+			<li>Django</li>
+			<li>EJB JSF JPA (Hibernate) PrimeFaces</li>
+			<li>React/Material-UI</li>
+			<li>Bootstrap</li>
+			<li>Android SDK</li>
+			<li>NumPy</li>
+			<li>Scikit-Learn</li>
+			<li>Pandas</li>
+			<li>Boost C++</li>
+			<li>KNIME</li>
+			<li>Spark</li>
+		</ul>
 
 	<li>Tools and Protocols</li>
 	<ul>
-	{% for item in cv.skills.toolsProtocols %}
-		<li>{{item}}</li>
-	{% endfor %}
-	</ul>
+			<li>Git</li>
+			<li>Kubernetes</li>
+			<li>Azure</li>
+			<li>Docker</li>
+			<li>ElasticSearch</li>
+			<li>Jaeger</li>
+			<li>OpenShift</li>
+			<li>Azure DevOps</li>
+			<li>Apache Flink</li>
+			<li>Apache Kafka</li>
+			<li>Apache Flume</li>
+			<li>Apache Camel</li>
+			<li>JUnit</li>
+			<li>JMS</li>
+			<li>Mockito</li>
+			<li>Visual Studio</li>
+			<li>Tensorflow</li>
+			<li>SOAP UI</li>
+			<li>GNU-Linux</li>
+			<li>MongoDB</li>
+			<li>Oracle Database 11g</li>
+			<li>SQLite</li>
+			<li>PostgreSQL</li>
+			<li>MySQL</li>
+			<li>Power Designer</li>
+			<li>Virtual Box</li>
+			<li>Linux Servers</li>
+			<li>Audacity</li>
+			<li>Moodle</li>
+			<li>Maven</li>
+			<li>Gradle</li>
+			<li>SSH clients</li>
+			<li>Heroku</li>
+			<li>Jenkins</li>
+			<li>Google Compute Engine</li>
+			<li>TortoiseSVN</li>
+			<li>\LaTeX</li>
+		</ul>
 
 	<li>Arch. and Metodologies</li>
 	<ul>
-	{% for item in cv.skills.archMetodologies %}
-		<li>{{item}}</li>
-	{% endfor %}
-	</ul>
+			<li>Microservices</li>
+			<li>REST</li>
+			<li>Web Services</li>
+			<li>SOAP</li>
+			<li>DevOps (Azure)</li>
+			<li>Pipelining</li>
+			<li>Scrum</li>
+			<li>Good Practices (SOLID, Modularity, Design Patterns)</li>
+		</ul>
 </ul>
 	
 <!-- ......................................................................................... -->
