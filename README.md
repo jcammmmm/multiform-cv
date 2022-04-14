@@ -16,3 +16,13 @@ for this version) in your templates.
 3. Create your environment: `$ python3 -m venv env`
 4. Activate your environment: `$ source env/bin/activate`
 5. Deactivate your environment: `$ deactivate`
+
+## How to run
+`$ python3 multiform-gen.py`
+
+## How to update deps.
+`$ pip freeze > requirements.txt`
+
+# Docs's docs
+## Jinja2
+https://jinja.palletsprojects.com/en/3.1.x/api/#custom-filters

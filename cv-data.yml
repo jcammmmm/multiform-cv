@@ -1,4 +1,6 @@
 name: Juan Camilo
+lastname: Flórez Vanegas
+webpage: jcamilo.co
 profile: >
   Computer Systems Engineer with about 4+ years of experience in Software Engineering
   and Development. Professional with proficient skills in Mathematics, Software
@@ -7,8 +9,7 @@ profile: >
   construction and implementation techniques. Engineer committed with organizations
   mission statements and a complete disposal to teamwork. Speaks English and Portuguese.
 experience:
-  - 
-    company: Credera
+  - name: Credera
     focusAreas: 
       - Stream Processing
       - Microservices
@@ -20,18 +21,23 @@ experience:
     location:
       country: United States 
       flagFileName: flag-usa.png
+      remote: True
     tools: [C/C++, Blender, Kafka, Java 11, AWS, Postgres, Spring Boot, Kubernetes]
     tasks:
-      - Re-implementation of Java7 legacy monoliths to Java11 microservices.
-      - Write several Kafka consumer-producers for the user-engagement streaming pipelines.
-      - Blender (C/C++) source code reverse engineering in order to understand and replicate Ghost UI for desktop applications.
-      - Build scripting with CMake.
-      - Develop a complete template file for work with Vulkan (C/C++) API.
-      - Microservices development with Spring Boot.
-      - Custom libraries development for microservices and ERP processing units that share the same business logic.
-      - Member of DE\&I committee (marketing pillar).
-  - 
-    company: Claro
+      - descr: Re-implementation of Java7 legacy monoliths to Java11 microservices.
+        italics: 
+          - monoliths
+          - microservices
+      - descr: Write several Kafka consumer-producers for the user-engagement streaming pipelines.
+        italics:
+          - Kafka
+      - descr: Blender (C/C++) source code reverse engineering in order to understand and replicate Ghost UI for desktop applications.
+      - descr: Build scripting with CMake.
+      - descr: Develop a complete template file for work with Vulkan (C/C++) API.
+      - descr: Microservices development with Spring Boot.
+      - descr: Custom libraries development for microservices and ERP processing units that share the same business logic.
+      - descr: Member of DE\&I committee (marketing pillar).
+  - name: Claro
     focusAreas: 
       - BigData Processing
       - Microservices
@@ -42,13 +48,155 @@ experience:
     location:
       country: Brazil 
       flagFileName: flag-brazil.png
+      remote: True
     tools: [Java 11, Apache Flume - Flink - Kafka - Camel, MongoDB, Spring Boot, OpenShift]
     tasks:
-      - Microservices development with Spring Boot, Quarkus and Django. Some examples can be seen \textbf{\href{https://github.com/VanJFlorez/flink-kafka-fraud-detection}{here}}
-      - Big Data processing components using Apache Kafka, Flink, Flume and Camel.
-      - Batch Scripts and Java programs to automate Docker images builds and storage within Docker Hub cloud registry.
-      - Deployments in Openshift Container Platform pre-production environments. This includes scripts for builds and image stress tests.
-      - Provide mentorship for Junior and entry-level developers.
-      - Take part as technical expert in 'MiClaro App' UI enhancements project.
+      - descr: Microservices development with Spring Boot, Quarkus and Django. Some examples can be seen HERE.
+        heres:
+          - https://github.com/VanJFlorez/flink-kafka-fraud-detection
+      - descr: Big Data processing components using Apache Kafka, Flink, Flume and Camel.
+      - descr: Batch Scripts and Java programs to automate Docker images builds and storage within Docker Hub cloud registry.
+      - descr: Deployments in Openshift Container Platform pre-production environments. This includes scripts for builds and image stress tests.
+      - descr: Provide mentorship for Junior and entry-level developers.
+      - descr: Take part as technical expert in 'MiClaro App' UI enhancements project.
+  - name: Zyos
+    focusAreas: 
+      - Backend Monolith Developer
+      - Server Side UI Rendering
+    jobTitle: FullStack Software Developer
+    period: 
+      from: 2019-01-01
+      to: 2020-02-28
+    location:
+      country: Colombia 
+      flagFileName: flag-colombia.png
+      remote: False
+    tools: [EJB, JSF, Primefaces, JPA (Hibernate), Angular 9, JavaScript (ES6), Maven, Git, Apache TomCat]
+    tasks:
+      - descr: Made improvements to Edificios Davivienda App business core features.
+        italics:
+          - Edificios Davivienda
+      - descr: Responsive front-end implementation and some styling improvements. Several JavaScript components (notifications, ratings, snackbars) to improve the user experience.
+      - descr: Backend software development to Mi Vivienda BCP App in order to boost and correct bugs in execution edge cases. New functionalities to the overall application. Edificios Davivienda available HERE and Mi Vivienda BCP available HERE.
+        heres:
+          - https://www.edificiosdavivienda.com
+          - https://www.miviviendabcp.com.bo
+        italics:
+          - Mi Vivienda BCP
+          - Edificios Davivienda
+
+education:
+  - name: Universidad Nacional de Colombia
+    degree: Software Engineering
+    period:
+      from: 2016-01-01
+      to: 2020-12-31
+    location:
+      city: Bogotá
+    gpa:
+      my: 4.3
+      over: 5.0
+socialnetworks:
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/vanjflores/
+    username: VanJFlorez
+  - name: GitHub
+    url: https://github.com/jcammmmm
+    username: VanJFlorez
+  - name: GitLab
+    url: https://gitlab.com/VanJFlorez
+    username: VanJFlorez
+certs:
+  - name: B2 English Certification (IELTS)
+    url: file://locationpath
+  - name: C1 English Certification (EF)
+    url: https://www.efset.org/cert/j8ebfw
+  - name: Machine Learning with Big Data
+    url: https://www.coursera.org/account/accomplishments/certificate/8MS64GGYWDT5?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate
+  - name: Convolutional Neural Networks
+    url: https://www.coursera.org/account/accomplishments/certificate/KFN2XJC2KP92?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate
+  - name: Automate Stuff with Python
+    url: https://www.udemy.com/certificate/UC-ZHLLMBQA
+  - name: Econometrics (University)
+  - name: Micro and Macroeconomics (University)
+  - name: Economic History (University)
+skills:
+  programmingLanguages:
+    - Java 
+    - C /++ 
+    - Javascript
+    - TypeScript
+    - SQL
+    - CSS
+    - Python
+    - Ruby
+    - Bash
+    - Batch
+  frameworks:
+    - Spring Boot
+    - Quarkus 
+    - RubyOnRails 
+    - Django 
+    - EJB JSF JPA (Hibernate) PrimeFaces  
+    - React/Material-UI 
+    - Bootstrap 
+    - Android SDK 
+    - NumPy 
+    - Scikit-Learn 
+    - Pandas  
+    - Boost C++ 
+    - KNIME 
+    - Spark
+  toolsProtocols:
+    - Git 
+    - Kubernetes 
+    - Azure 
+    - Docker 
+    - ElasticSearch 
+    - Jaeger 
+    - OpenShift  
+    - Azure DevOps 
+    - Apache Flink  
+    - Apache Kafka 
+    - Apache Flume 
+    - Apache Camel 
+    - JUnit 
+    - JMS 
+    - Mockito 
+    - Visual Studio  
+    - Tensorflow 
+    - SOAP UI 
+    - GNU-Linux 
+    - MongoDB 
+    - Oracle Database 11g  
+    - SQLite 
+    - PostgreSQL 
+    - MySQL 
+    - Power Designer 
+    - Virtual Box 
+    - Linux Servers 
+    - Audacity   
+    - Moodle 
+    - Maven  
+    - Gradle 
+    - SSH clients 
+    - Heroku  
+    - Jenkins 
+    - Google Compute Engine 
+    - TortoiseSVN 
+    - \LaTeX
+  archMetodologies:
+    - Microservices 
+    - REST 
+    - Web Services 
+    - SOAP 
+    - DevOps (Azure) 
+    - Pipelining 
+    - Scrum 
+    - Good Practices (SOLID, Modularity, Design Patterns)
+
+
+
+
 
 

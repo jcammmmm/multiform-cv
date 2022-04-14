@@ -1,2 +1,5 @@
+Jinja2==3.1.1
+MarkupSafe==2.1.1
 pyjson5==1.6.1
+python-dotenv==0.20.0
 PyYAML==6.0
