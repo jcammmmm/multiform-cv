@@ -1,4 +1,4 @@
-from jinja2 import Environment, PackageLoader, select_autoescape
+from jinja2 import Environment, PackageLoader
 from utils.formmating import format_date_period
 
 def to_valid_id(string):
@@ -23,7 +23,7 @@ def decorate_task_descr(task):
             descr = descr.replace(it, '<i>%s</i>'%it)
     return descr
 
-def html_generator(cv_data):
+def generator(cv_data, template_name):
     env = Environment(
         loader=PackageLoader('html'),
         autoescape=False,
@@ -33,5 +33,12 @@ def html_generator(cv_data):
     env.filters['format_date_period'] = format_date_period
     env.filters['decorate_task_descr'] = decorate_task_descr
 
-    template = env.get_template('cv-template.html')
+    template = env.get_template(template_name)
     return template.render(cv=cv_data)
+
+def html_generator(cv_data):
+    return generator(cv_data, 'cv-template.html')
+
+def html_generator_mob(cv_data):
+    return generator(cv_data, 'cv-template.mob.html')
+

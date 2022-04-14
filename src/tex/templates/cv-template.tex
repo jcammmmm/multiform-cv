@@ -183,7 +183,7 @@
         =% endif %=
         ==exp.location.country== =% if exp.location.remote == True %=(remote)=% endif %=
     }
-    \textit{(Tools/Tech. stack) ==exp.tools|join(', ')==}
+    \textit{(Tools/Tech. stack) ==exp.tools|join(', ')==} \\
     =% for task in exp.tasks %=
     - ==task|decorate_task_descr== \\
     =% endfor %=

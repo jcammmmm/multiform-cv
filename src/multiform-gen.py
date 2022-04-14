@@ -23,11 +23,13 @@ def main():
     cv_data['email'] = os.getenv('CV_PERSONAL_EMAIL')
     cv_data['phone'] = os.getenv('CV_PERSONAL_PHONE')
 
-    cv_tex = tex.gen.latex_generator(cv_data)
-    open('../cv/cv.tex', 'w').write(cv_tex)
+    generate_then_write('cv.tex', lambda: tex.gen.latex_generator(cv_data))
+    generate_then_write('cv.html', lambda: html.gen.html_generator(cv_data))
+    generate_then_write('cv.mob.html', lambda: html.gen.html_generator_mob(cv_data))
 
-    cv_html = html.gen.html_generator(cv_data)
-    open('../cv/cv.html', 'w').write(cv_html)
+def generate_then_write(out_filename, cv_filler):
+    cv = cv_filler()
+    open('../cv/' + out_filename, 'w').write(cv)
     
 if __name__ == '__main__':
     main()
