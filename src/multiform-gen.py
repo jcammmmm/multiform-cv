@@ -13,7 +13,7 @@ def main():
     print("- CV_PERSONAL_EMAIL")
     print("- CV_PERSONAL_PHONE")
 
-    data = open('../cv-data.yml', 'r').read()
+    data = open('../cv/cv.yml', 'r').read()
     try:
         from yaml import CLoader as Loader
     except ImportError:
@@ -24,10 +24,10 @@ def main():
     cv_data['phone'] = os.getenv('CV_PERSONAL_PHONE')
 
     cv_tex = tex.gen.latex_generator(cv_data)
-    open('../cv.tex', 'w').write(cv_tex)
+    open('../cv/cv.tex', 'w').write(cv_tex)
 
     cv_html = html.gen.html_generator(cv_data)
-    open('../cv.html', 'w').write(cv_html)
+    open('../cv/cv.html', 'w').write(cv_html)
     
 if __name__ == '__main__':
     main()
