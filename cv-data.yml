@@ -17,7 +17,7 @@ experience:
     jobTitle: Senior Java Software Developer
     period: 
       from: 2021-11-01
-      to: 2099-12-31
+      to: 2999-12-31
     location:
       country: United States 
       flagFileName: flag-usa.png
@@ -84,7 +84,35 @@ experience:
         italics:
           - Mi Vivienda BCP
           - Edificios Davivienda
-
+  - name: Centro de Pensamiento en Universidad Nacional
+    jobTitle: Software Engineer
+    period:
+      from: 2018-06-30
+      to: 2018-12-31
+    location:
+      country: Bogotá
+      remote: False
+    tools: [Ruby, RubyOnRails, NGinX, PostgresSQL, Debian-Linux, Moodle, PHP, SSH, Heroku, Google Compute Engine, Git, Docker, Rancker]
+    tasks:
+      - descr: Online course implementation with Moodle (available HERE) and a forum web application for that course with Thredded (available HERE). Full repository HERE.
+        heres:
+          - https://gitlab.com/VanJFlorez/animal_modeling_ethics/tree/master/docs/4 LMS build
+          - https://gitlab.com/VanJFlorez/animal_modeling_ethics/blob/master/docs/3\%20Social\%20WebApp/CP\%20etica\%20animal\%20webApp.pdf
+          - https://gitlab.com/VanJFlorez/animal_modeling_ethics/
+  - name: Grupo Sepro en Universidad Nacional
+    jobTitle: Software Developer
+    period: 
+      from: 2018-01-01
+      to: 2018-06-30
+    location:
+      country: Bogotá
+      remote: False
+    tools: [Python, Django, JavaScript, ExpressJS, Gunicorn, Apache HTTP Server, Git, VSCode, MySQL, Heroku]
+    tasks:
+      - descr: Designed and implemented a survey information system that computes statistics and measurements. This survey system was used to evaluate the behavior and performance of Avocado and Sugar Cane derivatives supply chains from Cauca to Bogota.
+      - descr: Coordinated a team of 3 undergraduate students to achieve the project goals. Two of them worked in software development and the another one work in QA. Available HERE.
+        heres:
+          - https://gitlab.com/VanJFlorez/sepro-webapp
 education:
   - name: Universidad Nacional de Colombia
     degree: Software Engineering

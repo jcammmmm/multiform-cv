@@ -26,3 +26,7 @@ for this version) in your templates.
 # Docs's docs
 ## Jinja2
 https://jinja.palletsprojects.com/en/3.1.x/api/#custom-filters
+https://jinja.palletsprojects.com/en/3.1.x/templates/#builtin-filters
+## PyYAML
+https://pyyaml.org/wiki/PyYAMLDocumentation
+

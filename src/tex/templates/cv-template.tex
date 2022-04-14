@@ -177,8 +177,10 @@
     \focusareas{==exp.focusAreas|join(' / ')==}
     \descript{==exp.jobTitle==}
     \location{
-        ==exp.period.from.year== ==exp.period.from.month== - Current | 
+        ==exp.period|format_date_period== |
+        =% if exp.location.flagFileName is defined %=
         \includegraphics[width=12pt]{==exp.location.flagFileName==}
+        =% endif %=
         ==exp.location.country== =% if exp.location.remote == True %=(remote)=% endif %=
     }
     \textit{(Tools/Tech. stack) ==exp.tools|join(', ')==}
@@ -188,9 +190,6 @@
     \sectionsep
 
 =% endfor %= 
-
-
-
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -2,6 +2,8 @@ from jinja2 import Environment, PackageLoader, select_autoescape
 
 def decorate_task_descr(task):
     descr = task['descr']
+    if descr == None:
+        raise NotImplementedError('Job tasks/activities cannot be empty! Please remove the dash without text.')
 
     # TODO: apply decorations in one pass
     if 'heres' in task.keys():
@@ -17,6 +19,20 @@ def decorate_task_descr(task):
             descr = descr.replace(it, '\\textit{%s}'%it)
     return descr
 
+def format_date_period(exp_period):
+    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    period_descr = ''
+    period_descr += months[int(exp_period['from'].month) - 1]
+    period_descr += ' '
+    period_descr += str(exp_period['from'].year)
+    period_descr += ' - '
+    if exp_period['to'].year == 2999:
+        period_descr += 'Current'
+    else:
+        period_descr += months[int(exp_period['to'].month) - 1]
+        period_descr += ' '
+        period_descr += str(exp_period['to'].year)
+    return period_descr
 
 def latex_generator(cv_data):
     env = Environment(
@@ -29,6 +45,7 @@ def latex_generator(cv_data):
         trim_blocks=True,
     )
     env.filters['decorate_task_descr'] = decorate_task_descr
+    env.filters['format_date_period'] = format_date_period
 
     template = env.get_template('cv-template.tex')
     return template.render(cv=cv_data)
