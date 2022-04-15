@@ -1,3 +1,10 @@
+# TODOS
+[ ] Add 4 audio recordings in each language
+[ ] Link your English certificate to your profile description
+[ ] Link something (e.g. youtube vid) in order to demo. your speaking
+[ ] Rearrange your skillset more comprehesively
+[ ] Add aside projects to your curriculum
+
 # About
 Python script that generate Juan Camilo's CV in several template formats    
 but with the same content.
