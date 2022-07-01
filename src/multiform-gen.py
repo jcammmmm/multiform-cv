@@ -29,7 +29,7 @@ def main():
 
 def generate_then_write(out_filename, cv_filler):
     cv = cv_filler()
-    open('../cv/' + out_filename, 'w').write(cv)
+    open('../cv/' + out_filename, 'w+').write(cv)
     
 if __name__ == '__main__':
     main()

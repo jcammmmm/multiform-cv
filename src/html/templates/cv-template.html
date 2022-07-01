@@ -155,19 +155,32 @@
 			</td>
         </tr>
         <tr>
-            <th scope="row" class="infobox-label" style="line-height:1.2em; padding-right:0.65em;">Notable works</th>
+            <th scope="row" class="infobox-label" style="line-height:1.2em; padding-right:0.65em;">Notable jobs</th>
             <td class="infobox-data" style="line-height:1.4em;">
-				<i><a href="https://en.wikipedia.org/wiki/The_Sandman_(Vertigo)" class="mw-redirect" title="The Sandman (Vertigo)">Credera</a></i>, 
-				<i><a href="https://en.wikipedia.org/wiki/The_Sandman_(Vertigo)" class="mw-redirect" title="The Sandman (Vertigo)">Claro</a></i>, 
-				<i><a href="https://en.wikipedia.org/wiki/The_Sandman_(Vertigo)" class="mw-redirect" title="The Sandman (Vertigo)">Zyos</a></i>, 
-				<i><a href="https://en.wikipedia.org/wiki/The_Sandman_(Vertigo)" class="mw-redirect" title="The Sandman (Vertigo)">Centro de pensamiento</a></i>, 
-				<i><a href="https://en.wikipedia.org/wiki/The_Sandman_(Vertigo)" class="mw-redirect" title="The Sandman (Vertigo)">Grupo SEPRO</a></i>
+				{% for exp in cv.experience %}
+					<i><a href="{{exp.url}}" class="mw-redirect" title="{{exp.name}}">{{exp.name}}</a></i>,
+				{% endfor %}
         </tr>
         <tr>
             <th scope="row" class="infobox-label" style="line-height:1.2em; padding-right:0.65em;">Years&nbsp;active
             </th>
             <td class="infobox-data" style="line-height:1.4em;">2015-present</td>
         </tr>
+		<tr>
+            <th scope="row" class="infobox-label" style="line-height:1.2em; padding-right:0.65em;">Social Links</th>
+            <td class="infobox-data" style="line-height:1.4em;">
+				{% for social in cv.socialnetworks %}
+					<i><a href="{{social.url}}" class="mw-redirect" title="The Sandman (Vertigo)">{{social.name}}</a></i>,
+				{% endfor %}
+        </tr>
+		<tr>
+			<th scope="row" class="infobox-label" style="line-height:1.2em; padding-right:0.65em;">See Also</th>
+			<td class="infobox-data" style="line-height:1.4em;">
+			<a href="/cv/cv.mob.html">Mobile version</a>,
+			<a href="/cv/cv.pdf">PDF version</a>,
+			<a href="/cv/cv.yml">YAML version</a>,
+			<a href="/cv/cv.tex">TeX version</a>
+		</tr>
 	</tbody>
 </table>
 
@@ -217,6 +230,12 @@
 			<a href="#Education">
 				<span class="tocnumber">2</span> 
 				<span class="toctext">Education</span>
+			</a>
+		</li>
+		<li class="toclevel-1">
+			<a href="#Personal_Projects">
+				<span class="tocnumber">2</span> 
+				<span class="toctext">Personal Projects</span>
 			</a>
 		</li>
 		<li class="toclevel-1">
@@ -285,6 +304,20 @@
 <!-- ......................................................................................... -->
 <!-- ......................................................................................... -->
 <!-- ......................................................................................... -->
+<h2><span class="mw-headline" id="Personal_Projects">Personal Projects</span></h2>
+{% for pproj in cv.pprojects %}
+<h3>
+	<span class="mw-headline">{{pproj.name}}</span><a rel="nofollow" class="external text" href="{{pproj.url}}"></a>
+</h3>
+<div role="note" style="margin-bottom: 0px;" class="hatnote navigation-not-searchable"><i>{{pproj.descr}}</i></div>
+
+{% endfor %}
+
+<!-- ......................................................................................... -->
+<!-- ......................................................................................... -->
+<!-- ......................................................................................... -->
+<!-- ......................................................................................... -->
+<!-- ......................................................................................... -->
 <h2><span class="mw-headline" id="Certs">Certificates</span></h2>
 <ul>
 	{% for cert in cv.certs %}
@@ -293,18 +326,6 @@
 		{% else %}
 		<li>{{cert.name}}</li>
 		{% endif %}
-	{% endfor %}
-</ul>
-
-<!-- ......................................................................................... -->
-<!-- ......................................................................................... -->
-<!-- ......................................................................................... -->
-<!-- ......................................................................................... -->
-<!-- ......................................................................................... -->
-<h2><span class="mw-headline" id="Social">Social</span></h2>
-<ul>
-	{% for social in cv.socialnetworks %}
-		<li><a href="{{social.url}}">{{social.name}}</a></li>
 	{% endfor %}
 </ul>
 
@@ -456,9 +477,23 @@ Transclusion expansion time report (%,ms,calls,template)
 	</label>
 	<div class="vector-menu-content">
 		
-		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item collapsible"><a href="https://en.wikipedia.org/wiki/Camilo_Florez"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item collapsible"><a href="https://en.wikipedia.org/w/index.php?title=Camilo_Florez&amp;action=edit" title="This page is protected.
-You can view its source [⌃⌥e]" accesskey="e"><span>View source</span></a></li><li id="ca-history" class="mw-list-item collapsible"><a href="https://en.wikipedia.org/w/index.php?title=Camilo_Florez&amp;action=history" title="Past revisions of this page [⌃⌥h]" accesskey="h"><span>View history</span></a></li></ul>
-		
+		<ul class="vector-menu-content-list">
+			<li id="ca-view" class="selected mw-list-item collapsible">
+				<a href="https://en.wikipedia.org/wiki/Camilo_Florez">
+					<span>Read</span>
+				</a>
+			</li>
+			<li id="ca-viewsource" class="mw-list-item collapsible">
+				<a href="https://en.wikipedia.org/w/index.php?title=Camilo_Florez&amp;action=edit" title="This page is protected. You can view its source [⌃⌥e]" accesskey="e">
+					<span>View source</span>
+				</a>
+			</li>
+			<li id="ca-history" class="mw-list-item collapsible">
+				<a href="https://en.wikipedia.org/w/index.php?title=Camilo_Florez&amp;action=history" title="Past revisions of this page [⌃⌥h]" accesskey="h">
+					<span>View history</span>
+				</a>
+			</li>
+		</ul>
 	</div>
 </nav>
 

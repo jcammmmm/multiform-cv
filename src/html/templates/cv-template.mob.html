@@ -3224,19 +3224,36 @@
 										</tr>
 										<tr>
 											<th scope="row" class="infobox-label"
-												style="line-height:1.2em; padding-right:0.65em;">Notable works</th>
+												style="line-height:1.2em; padding-right:0.65em;">Notable jobs</th>
 											<td class="infobox-data" style="line-height:1.4em;">
-												<i><a href="https://en.wikipedia.org/wiki/The_Sandman_(Vertigo)" class="mw-redirect" title="The Sandman (Vertigo)">Credera</a></i>, 
-												<i><a href="https://en.wikipedia.org/wiki/The_Sandman_(Vertigo)" class="mw-redirect" title="The Sandman (Vertigo)">Claro</a></i>, 
-												<i><a href="https://en.wikipedia.org/wiki/The_Sandman_(Vertigo)" class="mw-redirect" title="The Sandman (Vertigo)">Zyos</a></i>, 
-												<i><a href="https://en.wikipedia.org/wiki/The_Sandman_(Vertigo)" class="mw-redirect" title="The Sandman (Vertigo)">Centro de pensamiento</a></i>, 
-												<i><a href="https://en.wikipedia.org/wiki/The_Sandman_(Vertigo)" class="mw-redirect" title="The Sandman (Vertigo)">Grupo SEPRO</a></i>
+												{% for exp in cv.experience %}
+													<i><a href="{{exp.url}}" class="mw-redirect" title="{{exp.name}}">{{exp.name}}</a></i>,
+												{% endfor %}
 											</td>
 										</tr>
 										<tr>
 											<th scope="row" class="infobox-label"
 												style="line-height:1.2em; padding-right:0.65em;">Years&nbsp;active</th>
-											<td class="infobox-data" style="line-height:1.4em;">2015–present</td>
+											<td class="infobox-data" style="line-height:1.4em;">2015-present</td>
+										</tr>
+										<tr>
+											<th scope="row" class="infobox-label"
+												style="line-height:1.2em; padding-right:0.65em;">Social Links</th>
+											<td class="infobox-data" style="line-height:1.4em;">
+												{% for social in cv.socialnetworks %}
+													<i><a href="{{social.url}}" class="mw-redirect" title="The Sandman (Vertigo)">{{social.name}}</a></i>,
+												{% endfor %}
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="infobox-label"
+												style="line-height:1.2em; padding-right:0.65em;">See also</th>
+											<td class="infobox-data" style="line-height:1.4em;">
+												<a href="/cv/cv.html">Desktop version</a>,
+												<a href="/cv/cv.pdf">PDF version</a>,
+												<a href="/cv/cv.yml">YAML version</a>,
+												<a href="/cv/cv.tex">TeX version</a>
+											</td>
 										</tr>
 									</tbody>
 								</table>
@@ -3280,6 +3297,12 @@
 											<a href="#Education">
 												<span class="tocnumber">2</span> 
 												<span class="toctext">Education</span>
+											</a>
+										</li>
+										<li class="toclevel-1">
+											<a href="#Personal_Projects">
+												<span class="tocnumber">2</span> 
+												<span class="toctext">Personal Projects</span>
 											</a>
 										</li>
 										<li class="toclevel-1">
@@ -3367,6 +3390,26 @@
 <h2 class="section-heading collapsible-heading open-block">
 	<div
 		class="mw-ui-icon mw-ui-icon-mf-expand indicator mw-ui-icon-flush-left mw-ui-icon-small mf-mw-ui-icon-rotate-flip">
+	</div><span class="mw-headline" id="Personal_Projects" tabindex="0" role="button"
+		aria-controls="content-collapsible-block-0" aria-expanded="true">Personal Projects</span>
+</h2>
+{% for pproj in cv.pprojects %}
+<h3 style="padding-bottom: 0px;">
+	<span class="mw-headline">{{pproj.name}}<a rel="nofollow" class="external text" href="{{pproj.url}}"></a></span>
+</h3>
+<span class="mw-editsection" style="font-size: small; margin-left: 0px;padding-left: 22.4px;"><i>{{pproj.descr}}</i></span></br>
+{% endfor %}
+
+
+
+<!-- ......................................................................................... -->
+<!-- ......................................................................................... -->
+<!-- ......................................................................................... -->
+<!-- ......................................................................................... -->
+<!-- ......................................................................................... -->
+<h2 class="section-heading collapsible-heading open-block">
+	<div
+		class="mw-ui-icon mw-ui-icon-mf-expand indicator mw-ui-icon-flush-left mw-ui-icon-small mf-mw-ui-icon-rotate-flip">
 	</div><span class="mw-headline" id="Certs" tabindex="0" role="button"
 		aria-controls="content-collapsible-block-0" aria-expanded="true">Certificates</span>
 </h2>
@@ -3379,24 +3422,6 @@
 		{% endif %}
 	{% endfor %}
 </ul>
-
-<!-- ......................................................................................... -->
-<!-- ......................................................................................... -->
-<!-- ......................................................................................... -->
-<!-- ......................................................................................... -->
-<!-- ......................................................................................... -->
-<h2 class="section-heading collapsible-heading open-block">
-	<div
-		class="mw-ui-icon mw-ui-icon-mf-expand indicator mw-ui-icon-flush-left mw-ui-icon-small mf-mw-ui-icon-rotate-flip">
-	</div><span class="mw-headline" id="Social" tabindex="0" role="button"
-		aria-controls="content-collapsible-block-0" aria-expanded="true">Social</span>
-</h2>
-<ul>
-	{% for social in cv.socialnetworks %}
-		<li><a href="{{social.url}}">{{social.name}}</a></li>
-	{% endfor %}
-</ul>
-
 
 <!-- ......................................................................................... -->
 <!-- ......................................................................................... -->

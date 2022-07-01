@@ -6,6 +6,15 @@
 [ ] Link the companies names with their web pages
 [ ] Add side projects to your curriculum   
 
+# Usage
+1. edit the main source of truth aka cv.yml
+2. `$ cd multiform-cv`
+3. `$ pip install`
+4. `$ source env/bin/activate`
+5. `$ cd src`
+6. `$ python3 multiform-gen.py`
+7. output in ../cv folder
+
 # About
 Python script that generate Juan Camilo's CV in several template formats    
 but with the same content.
@@ -26,7 +35,7 @@ for this version) in your templates.
 5. Deactivate your environment: `$ deactivate`
 
 ## How to run
-`$ python3 multiform-gen.py`
+`$ python3 src/multiform-gen.py`
 
 ## How to update deps.
 `$ pip freeze > requirements.txt`

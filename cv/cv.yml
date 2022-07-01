@@ -2,14 +2,15 @@ name: Juan Camilo
 lastname: Flórez Vanegas
 webpage: jcamilo.co
 profile: >
-  Computer Systems Engineer with about 4+ years of experience in Software Engineering
-  and Development. Professional with proficient skills in Mathematics, Software
-  Development, Software Architecture and Software Design. Highly motivated by reaching
-  goals and measurements. Agile learner. Up-to-date with State of the Art in software
-  construction and implementation techniques. Engineer committed with organizations
-  mission statements and a complete disposal to teamwork. Speaks English and Portuguese.
+  Computer Systems Engineer with 5 years of experience in Software Engineering and Development. 
+  Professional with proficient skills in Mathematics, Software Development, Software Architecture 
+  and Software Design. Highly motivated by reaching goals and measurements. Agile learner. Up-to-date 
+  with State of the Art in software construction and implementation techniques. He is an Engineer 
+  committed with organizations mission statements, with a great sense of responsibility, commitment 
+  and good teamwork. Can speak English and Portuguese. 
 experience:
   - name: Credera
+    url: https://www.credera.com/
     focusAreas: 
       - Stream Processing
       - Microservices
@@ -38,6 +39,7 @@ experience:
       - descr: Custom libraries development for microservices and ERP processing units that share the same business logic.
       - descr: Member of DE\&I committee (marketing pillar).
   - name: Claro
+    url: https://www.claro.com.co/institucional/
     focusAreas: 
       - BigData Processing
       - Microservices
@@ -60,6 +62,7 @@ experience:
       - descr: Provide mentorship for Junior and entry-level developers.
       - descr: Take part as technical expert in 'MiClaro App' UI enhancements project.
   - name: Zyos
+    url: https://neivor.com
     focusAreas: 
       - Backend Monolith Developer
       - Server Side UI Rendering
@@ -84,7 +87,8 @@ experience:
         italics:
           - Mi Vivienda BCP
           - Edificios Davivienda
-  - name: Centro de Pensamiento en Universidad Nacional
+  - name: Centro de Pensamiento UNAL
+    url: http://pensamiento.unal.edu.co/cp-eticaanimal/
     jobTitle: Software Engineer
     period:
       from: 2018-06-30
@@ -99,7 +103,8 @@ experience:
           - https://gitlab.com/VanJFlorez/animal_modeling_ethics/tree/master/docs/4 LMS build
           - https://gitlab.com/VanJFlorez/animal_modeling_ethics/blob/master/docs/3\%20Social\%20WebApp/CP\%20etica\%20animal\%20webApp.pdf
           - https://gitlab.com/VanJFlorez/animal_modeling_ethics/
-  - name: Grupo Sepro en Universidad Nacional
+  - name: Grupo Sepro
+    url: http://www.seprologistica.unal.edu.co/publicaciones
     jobTitle: Software Developer
     period: 
       from: 2018-01-01
@@ -115,15 +120,37 @@ experience:
           - https://gitlab.com/VanJFlorez/sepro-webapp
 education:
   - name: Universidad Nacional de Colombia
-    degree: Software Engineering
+    degree: Bs. Computer Science
     period:
       from: 2016-01-01
-      to: 2020-12-31
+      to: 2022-12-31
     location:
       city: Bogotá
     gpa:
       my: 4.3
       over: 5.0
+pprojects:
+  - name: STL Renderer
+    descr: A WebGL application that parses and renders STL files in HTML5 canvas.
+    url: https://github.com/jcammmmm/stl-reader
+  - name: Multiform CV
+    descr: A meta CV data format and generator to output your CV in other formats (responsive html, tex, json5, yaml, txt).
+    url: https://github.com/jcammmmm/multiform-cv
+  - name: Semi-infinite Programming with SQP
+    descr: Numerical solution of Chebyshev function approximation problems as a semi-infinite problem solved with SQP method.
+    url: https://jcamilo.co/blogs/sip-sqp
+  - name: Java2Python transpiler
+    descr: ANTLR based tool that transpiles Java code to Python3 code.
+    url: https://github.com/jcammmmm/JavaToPythonTranspiler
+  - name: K8s tools
+    descr: Script that ease the process of docker image building and release to public repositories.
+    url: https://github.com/jcammmmm/k8stools
+  - name: Criptography Algorithms
+    descr: Collection of criptography algorithms, mostly ciphers.
+    url: https://github.com/jcammmmm/cryptographyAlgorithms
+  - name: More on github
+    descr: There are more personal projects available on github, but are not longer mantained.
+    url: https://github.com/jcammmmm?tab=repositories
 socialnetworks:
   - name: LinkedIn
     url: https://www.linkedin.com/in/vanjflores/
@@ -136,7 +163,7 @@ socialnetworks:
     username: VanJFlorez
 certs:
   - name: B2 English Certification (IELTS)
-    url: file://locationpath
+    url: https://jcamilo.co/IELTS-2022.pdf
   - name: C1 English Certification (EF)
     url: https://www.efset.org/cert/j8ebfw
   - name: Machine Learning with Big Data
