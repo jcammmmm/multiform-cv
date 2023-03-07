@@ -163,16 +163,36 @@ pprojects:
     descr: A WebGL application that parses and renders STL files in HTML5 canvas.
     url: https://github.com/jcammmmm/stl-reader
     demos: 
-      - url: https://jcamilo.co/stl-reader/index.html 
+      - url: https://jcamilo.co/stl-reader/index.html?shape=barz
         comment: > 
-          This is a live example showing a 3D visualization of my 2021 commit 
-          history in Github. Move the mouse while keeping the left click pressed
-          to move the shape. Press Control key while scrolling to zoom in or out.
-          Scroll to position the shape vertically. Scroll and Shift key to position
-          the shape horizontally.
+          This is a live example showing a 3D visualization of my 2021 commit history in Github. Move the mouse 
+          while keeping the left click pressed to move the shape. Press Control key while scrolling to zoom in or 
+          out. Scroll to position the shape vertically. Scroll and Shift key to position the shape horizontally. 
+      - url: https://jcamilo.co/stl-reader/index.html?shape=teap
+        comment: >          
+          The standard teapot test model. Move the mouse while keeping the left click pressed to move the shape. Press 
+          Control key while scrolling to zoom in or out. Scroll to position the shape vertically. Scroll and Shift key 
+          to position the shape horizontally. 
+      - url: https://jcamilo.co/stl-reader/index.html?shape=cube
+        comment: >
+          A simple cube in 3D. Note how the optical illution works! Move the mouse while keeping the left click 
+          pressed to move the shape. Press Control key while scrolling to zoom in or out. Scroll to position the shape 
+          vertically. Scroll and Shift key to position the shape horizontally. 
   - name: Multiform CV
     descr: A meta CV data format and generator to output your CV in other formats (responsive html, tex, json5, yaml, txt).
     url: https://github.com/jcammmmm/multiform-cv
+    demos:
+      - url: https://jcamilo.co/cv.pdf
+        comment: >
+          This PDF file and the current web page have the same content. Due to PDF format limitations, some 
+          content was cropped. The most complete version of this CV can be found in the YAML format. 
+      - url: https://jcamilo.co/cv.yml
+        comment: >
+          This file contains the data in YAML format that is used to fill out the templates that generate the PDF, 
+          HTML, TeX and other formats that can be used to spread your CV.
+      - url: https://jcamilo.co/cv.mob.html
+        comment: > 
+          The mobile version of this website. 
   - name: Semi-infinite Programming with SQP
     descr: Numerical solution of Chebyshev function approximation problems as a semi-infinite problem solved with SQP method.
     url: https://jcamilo.co/posts/chebyshev/index.html

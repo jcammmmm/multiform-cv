@@ -310,18 +310,19 @@
 	<span class="mw-headline">{{pproj.name}}</span><a rel="nofollow" class="external text" href="{{pproj.url}}"></a>
 </h3>
 <div role="note" style="margin-bottom: 0px;" class="hatnote navigation-not-searchable"><i>{{pproj.descr}}</i></div>
-	{% for demo in pproj.demos %}
-	<div class="thumbinner" style="width: 410px;">
-		<iframe width="450" height="350" src="{{demo.url}}" style="border: 1px solid black;
-		width: 100%;"></iframe>  
-		<div class="thumbcaption">
-			<div class="magnify">
-				<a href="{{demo.url}}" class="internal" title="Enlarge"></a>
-			</div>
-			{{demo.comment}}
-		</div>
-	</div>
-	{% endfor %}
+  <div style="display: flex;">
+    {% for demo in pproj.demos %}
+    <div class="thumbinner" style="width: 33%; margin: 0.5%">
+      <iframe width="99%" height="350" src="{{demo.url}}"></iframe>  
+      <div class="thumbcaption">
+        <div class="magnify">
+          <a href="{{demo.url}}" class="internal" title="Enlarge"></a>
+        </div>
+        {{demo.comment}}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 {% endfor %}
 
 <!-- ......................................................................................... -->
