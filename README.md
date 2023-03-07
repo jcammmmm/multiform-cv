@@ -8,12 +8,13 @@
 
 # Usage
 1. edit the main source of truth aka cv.yml
-2. `$ cd multiform-cv`
-3. `$ pip install`
-4. `$ source env/bin/activate`
-5. `$ cd src`
-6. `$ python3 multiform-gen.py`
-7. output in ../cv folder
+2. `$> cd multiform-cv`
+3. `$> python -m venv venv`
+4. `$> venv\Scripts\activate.bat`
+5. `$> pip install -r requirements.txt`
+6. `$> cd src`
+7. `$> python3 multiform-gen.py`
+8. output in ../cv folder
 
 # About
 Python script that generate Juan Camilo's CV in several template formats    
@@ -41,6 +42,8 @@ for this version) in your templates.
 `$ pip freeze > requirements.txt`
 
 # Docs's docs
+## venv
+https://docs.python.org/3/library/venv.html#how-venvs-work
 ## Jinja2
 https://jinja.palletsprojects.com/en/3.1.x/api/#custom-filters
 https://jinja.palletsprojects.com/en/3.1.x/templates/#builtin-filters

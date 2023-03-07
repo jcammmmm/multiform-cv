@@ -9,6 +9,27 @@ profile: >
   committed with organizations mission statements, with a great sense of responsibility, commitment 
   and good teamwork. Can speak English and Portuguese. 
 experience:
+  - name: Optum
+    url: https://www.optum.com/financial-services.html
+    focusAreas: 
+      - Root Cause Analysis
+      - Software Development and Maintenance
+      - SQL Analysis and optimization
+    jobTitle: Manager Software Engineer
+    period:
+      from: 2022-10-03
+      to: 2999-12-31
+    location:
+      country: United States
+      flagFileName: flag-usa.png
+      remote: True
+    tools: [SQL, Java EE 8, Spring Boot, Java Server Pages, JavaScript, Python]
+    tasks:
+      - descr: Found and fix bugs in Optum Financial application core (Root Cause Analysis).
+      - descr: Advanced SQL analysis and engineering.
+      - descr: Full stack development; from SQL DDL/DML to JavaScript frontend code.
+      - descr: Write software documentation.
+      - descr: Debugging and patching 15+ year old application.
   - name: Credera
     url: https://www.credera.com/
     focusAreas: 
@@ -18,7 +39,7 @@ experience:
     jobTitle: Senior Java Software Developer
     period: 
       from: 2021-11-01
-      to: 2999-12-31
+      to: 2022-10-03
     location:
       country: United States 
       flagFileName: flag-usa.png
@@ -123,13 +144,21 @@ education:
     degree: Bs. Computer Science
     period:
       from: 2016-01-01
-      to: 2022-12-31
+      to: 2023-04-10
     location:
       city: Bogotá
     gpa:
       my: 4.3
       over: 5.0
 pprojects:
+  - name: NeatPosts
+    descr: Markdown with LaTex typesetted mathematics to HTML academic style paper converter.
+    url: https://github.com/jcammmmm/neatposts
+    demos: 
+      - url: https://jcamilo.co/posts/neatposts
+        comment: >
+          An example on how can you present your information clearly and in an easy to 
+          follow way without to mess your readers.
   - name: STL Renderer
     descr: A WebGL application that parses and renders STL files in HTML5 canvas.
     url: https://github.com/jcammmmm/stl-reader
@@ -146,7 +175,19 @@ pprojects:
     url: https://github.com/jcammmmm/multiform-cv
   - name: Semi-infinite Programming with SQP
     descr: Numerical solution of Chebyshev function approximation problems as a semi-infinite problem solved with SQP method.
-    url: https://jcamilo.co/blogs/sip-sqp
+    url: https://jcamilo.co/posts/chebyshev/index.html
+    demos: 
+      - url: https://jcamilo.co/posts/chebyshev/index.html
+        comment: >
+          In this document a Chebyshev's approximation to a real valued function is performed through a 
+          semi-infinite programming problem. This reformulation uses the software tools available for 
+          optimization problems to compute the approximation. In particular, the computer program employed 
+          to execute the optimization task relies heavily in Sequential Quadratic Programming (SQP) method. 
+          In order to made this document self-contained, the definitions and techniques that composes the 
+          SQP method are described. In the first section, the problem restatement into semi-infinite programming 
+          terms is detailed, and some problem examples are portrayed. The following section describes the 
+          SQP techniques and core concepts that makes the method. In the final section, the sample problems 
+          shown are computed.
   - name: Java2Python transpiler
     descr: ANTLR based tool that transpiles Java code to Python3 code.
     url: https://github.com/jcammmmm/JavaToPythonTranspiler

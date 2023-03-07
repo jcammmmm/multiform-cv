@@ -13,7 +13,7 @@ def main():
     print("- CV_PERSONAL_EMAIL")
     print("- CV_PERSONAL_PHONE")
 
-    data = open('../cv/cv.yml', 'r').read()
+    data = open('../cv/cv.yml', 'r', encoding='utf-8').read()
     try:
         from yaml import CLoader as Loader
     except ImportError:
@@ -29,7 +29,7 @@ def main():
 
 def generate_then_write(out_filename, cv_filler):
     cv = cv_filler()
-    open('../cv/' + out_filename, 'w+').write(cv)
+    open('../cv/' + out_filename, 'wb+').write(cv.encode('utf8'))
     
 if __name__ == '__main__':
     main()
