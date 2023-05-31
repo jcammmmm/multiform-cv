@@ -5,6 +5,8 @@ import tex.gen
 import html.gen
 import os
 
+import re
+
 load_dotenv()
 
 def main():
@@ -13,23 +15,33 @@ def main():
     print("- CV_PERSONAL_EMAIL")
     print("- CV_PERSONAL_PHONE")
 
-    data = open('../cv/cv.yml', 'r', encoding='utf-8').read()
-    try:
-        from yaml import CLoader as Loader
-    except ImportError:
-        from yaml import Loader
 
-    cv_data = load(data, Loader=Loader)
-    cv_data['email'] = os.getenv('CV_PERSONAL_EMAIL')
-    cv_data['phone'] = os.getenv('CV_PERSONAL_PHONE')
+    langava = ['en', 'es']
+    for lang in langava:
+        data = open('../cv/{}/cv.yml'.format(lang), 'r', encoding='utf-8').read()
+        try:
+            from yaml import CLoader as Loader
+        except ImportError:
+            from yaml import Loader
 
-    generate_then_write('cv.tex', lambda: tex.gen.latex_generator(cv_data))
-    generate_then_write('cv.html', lambda: html.gen.html_generator(cv_data))
-    generate_then_write('cv.mob.html', lambda: html.gen.html_generator_mob(cv_data))
+        cv_data = load(data, Loader=Loader)
+        cv_data['email'] = os.getenv('CV_PERSONAL_EMAIL')
+        cv_data['phone'] = os.getenv('CV_PERSONAL_PHONE')
 
-def generate_then_write(out_filename, cv_filler):
+        generate_then_write(lang, 'cv.tex', lambda: tex.gen.latex_generator(cv_data))
+        generate_then_write(lang, 'cv.html', lambda: html.gen.html_generator(cv_data))
+        generate_then_write(lang, 'cv.mob.html', lambda: html.gen.html_generator_mob(cv_data))
+
+def generate_then_write(lang, out_filename, cv_filler):
     cv = cv_filler()
-    open('../cv/' + out_filename, 'wb+').write(cv.encode('utf8'))
+    open('../cv/{}/{}'.format(lang, out_filename), 'wb+').write(cv.encode('utf8'))
     
 if __name__ == '__main__':
     main()
+    exit
+    def it(matchobj):
+        return 'xxxx'
+    p = re.compile(r'_\w*_')
+    ms = p.sub(it, 'buah _aha_ hahab _ds_')
+    print('_buahahahahah_'[1:-1])
+    exit
