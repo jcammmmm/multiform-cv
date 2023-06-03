@@ -84,7 +84,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Education} 
+\section{==cv.headings.education==} 
 =% for edu in cv.education %=
 \subsection{Universidad Nacional}
 \subsection{de Colombia}
@@ -97,7 +97,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SOCIAL NETWORKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Links}
+\section{==cv.headings.socialLinks==}
 =% for social in cv.socialnetworks %=
     ==social.name==:// \href{==social.url==}{\bf ==social.username==} \\
 =% endfor %=
@@ -106,7 +106,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     CERTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Certs}
+\section{==cv.headings.certificates==}
 =% for cert in cv.certs %=
 =% if cert.url is defined %=
 -- \textbf{\href{==cert.url==}{==cert.name==}} \\
@@ -115,7 +115,7 @@
 =% endif %=
 =% endfor %=
 \smallskip
-\scriptsize{* Some entries are linked to the certificates.}
+\scriptsize{==cv.headings.certificatesNote1==}
 \sectionsep
 
 %{\footnotesize \textit{\textbf{(see github) }}} \\
@@ -123,23 +123,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Skills}
-\locationbold{Programming Languages}
+\section{==cv.headings.skills==}
+\locationbold{==cv.headings.programmingLanguages==}
 =% for lang in cv.skills.programmingLanguages %=
-    \textbullet{} ==lang==
+    \textbullet{} ==lang.name==
 =% endfor %=
 
-\locationbold{Frameworks/SDK/Libraries}
+\locationbold{==cv.headings.framework==}
 =% for item in cv.skills.frameworks %=
     \textbullet{} ==item==
 =% endfor %=
 
-\locationbold{Tools/Protocols}
+\locationbold{==cv.headings.toolsAndProtocols==}
 =% for item in cv.skills.toolsProtocols %=
     \textbullet{} ==item==
 =% endfor %=
 
-\locationbold{Architectures/Methodologies}
+\locationbold{==cv.headings.architecturesAndMetodologies==}
 =% for item in cv.skills.archMetodologies %=
     \textbullet{} ==item==
 =% endfor %=
@@ -161,7 +161,7 @@
 %     ABOUT ME
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Profile}
+\section{==cv.headings.profile==}
 ==cv.profile==
 
 % inteligencia artificial %
@@ -171,7 +171,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Recent Experience}
+\section{==cv.headings.recentExperience==}
 =% for exp in cv.experience %=
     \runsubsection{==exp.name==}
     \focusareas{==exp.focusAreas|join(' / ')==}

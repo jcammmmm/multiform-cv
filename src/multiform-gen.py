@@ -16,7 +16,7 @@ def main():
     print("- CV_PERSONAL_PHONE")
 
 
-    langava = ['en', 'es']
+    langava = ['en', 'es', 'pt']
     for lang in langava:
         data = open('../cv/{}/cv.yml'.format(lang), 'r', encoding='utf-8').read()
         try:

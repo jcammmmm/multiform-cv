@@ -1,3 +1,4 @@
+from re import compile
 from jinja2 import Environment, PackageLoader, select_autoescape
 from utils.formmating import format_date_period
 
@@ -6,18 +7,31 @@ def decorate_task_descr(task):
     if descr == None:
         raise NotImplementedError('Job tasks/activities cannot be empty! Please remove the dash without text.')
 
-    # TODO: apply decorations in one pass
-    if 'heres' in task.keys():
-        i = 0
-        for _ in task['heres']:
-            descr = descr.replace('HERE', '\\textbf{\\href{%s}{here}}'%task['heres'][i], 1)
-            i += 1
-    if 'bolds' in task.keys():
-        for b in task['bolds']:
-            descr = descr.replace(b, '\\textbf{%s}'%b)
-    if 'italics' in task.keys():
-        for it in task['italics']:
-            descr = descr.replace(it, '\\textit{%s}'%it)
+    # bold and italics
+    def itbold(matchobj):
+        return '\\textit{\\textbf{%s}}'%matchobj.group(0)[3:-3]
+    p = compile(r'_\*\*.*?\*\*_')
+    descr = p.sub(itbold, descr)
+
+    # italics
+    def it(matchobj):
+        return '\\textit{%s}'%matchobj.group(0)[1:-1]
+    p = compile(r'_.*?_')
+    descr = p.sub(it, descr)
+
+    # bold
+    def bold(matchobj):
+        return '\\textbf{%s}'%matchobj.group(0)[2:-2]
+    p = compile(r'\*\*.*?\*\*')
+    descr = p.sub(bold, descr)
+
+    # heres
+    def here(matchobj):
+        data = matchobj.group(0)[1:-1].split(', ')
+        return '\\textbf{\\href{%s}{%s}}'%(data[1].strip(), data[0].strip())
+    p = compile(r'\[.*?\]')
+    descr = p.sub(here, descr)
+
     return descr
 
 def latex_generator(cv_data):
