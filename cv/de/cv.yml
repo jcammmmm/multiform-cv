@@ -1,0 +1,391 @@
+# Avoid ':', '&', '$' symbols in order to ease the implementation of TeX, YAML and HTML formats
+name: Juan Camilo
+lastname: Flórez Vanegas
+webpage: https://jcamilo.co
+profile: >
+  Computersystemingenieur mit 5 Jahren Erfahrung in Software-Engineering und -Entwicklung. Fachmann mit fundierten Kenntnissen in Mathematik, Software-Entwicklung, Software-Architektur und Software-Design. Hochmotiviert durch das Erreichen von Zielen und Messungen. Agiler Lernender. Auf dem neuesten Stand der Softwarekonstruktions- und Implementierungstechniken. Er ist ein Ingenieur, der sich für die Leitbilder von Organisationen einsetzt und über großes Verantwortungsbewusstsein, Engagement und gute Teamarbeit verfügt. Kann Englisch und Portugiesisch sprechen.
+card:
+  connector: ist ein
+  photofoot: Camilo im 2022
+  occupations:
+    - Softwareentwickler
+    - Computerprogrammierer
+    - Problemlöser
+    - Skeptiker
+    - Mathematikleser
+  interests:
+    - Name: Informatik
+      url: https://en.wikipedia.org/wiki/Computer Science
+    - Name: Softwareentwicklung
+      url: https://en.wikipedia.org/wiki/Software_Development
+    - Name: Software Engineering
+      url: https://en.wikipedia.org/wiki/Software_Engineering
+    - Name: Verteiltes Rechnen
+      url: https://en.wikipedia.org/wiki/Distributed_Computing
+    - Name: Computergrafik
+      url: https://en.wikipedia.org/wiki/Computer_Graphics
+    - Name: Mathematik
+      url: https://en.wikipedia.org/wiki/Mathematics
+  yearsActive: 2018-present
+  cvFormats:
+    - format: Mobile version
+      url: cv/cv.mob.html
+    - format: PDF version
+      url: /cv/cv.pdf
+    - format: YAML version
+      url: /cv/cv.yml
+    - format: TeX version
+      url: /cv/cv.tex
+experience:
+  - name: Logical
+    url: http://logical.com.co/
+    focusAreas: 
+      - Grafikprogrammierung
+      - Backend-Webentwicklung
+      - Frontend-Webentwicklung
+      - Datenbank Design
+    jobTitle: Software Engineer and Computer Programmer (Self-employed)
+    period:
+      from: 2023-06-01
+      to: 2999-12-31
+    location:
+      country: Kolumbien
+      flagFileName: flag-colombia.png
+      remote: False
+    tools: [C++, OpenGL, Java11, SpringBoot, Next.js, PostgreSQL]
+    tasks:
+      - descr: Mehrere Computergrafikanwendungen zerlegen; ProjectM, Blender, PyMol.
+      - descr: Erstellen Sie ein Softwaresystem, um die Preisentwicklung von Supermärkten in Bogotá zu verfolgen.
+      - descr: Erstellen Sie ein Softwaresystem zur Verwaltung von Arbeit und Artikeln für Filialgeschäfte oder Einzelhandelsgeschäfte.
+      - descr: Analysieren Sie die Zikadenkommunikation mit der Fourier-Analyse.
+  - name: Optum
+    url: https://www.optum.com/financial-services.html
+    focusAreas: 
+      - Ursachenanalyse
+      - Softwareentwicklung und -wartung
+      - SQL-Analyse und -Optimierung
+    jobTitle: Manager Software Engineer
+    period:
+      from: 2022-10-03
+      to: 2023-05-31
+    location:
+      country: Vereinigte Staaten
+      flagFileName: flag-usa.png
+      remote: True
+    tools: [SQL, Java EE 8, Spring Boot, Java Server Pages, JavaScript, Python]
+    tasks:
+      - descr: Korrigieren Sie einen Finanzbericht über _40.000_ USD/Jahr, der falsche Provisionsbeträge enthielt.
+      - descr: Fehler in der Optum Financial-Kernanwendung gefunden und behoben (_Root Cause Analysis_).
+      - descr: Erweiterte SQL-Analyse und -Optimierungen.
+      - descr: Full-Stack-Entwicklung; von _SQL DDL/DML_ zu _JavaScript_ Frontend-Code.
+      - descr: Softwaredokumentation schreiben.
+      - descr: Debuggen und Patchen dieser über 15 Jahre alten Anwendung.
+  - name: Credera
+    url: https://www.credera.com/
+    focusAreas: 
+      - Stream-Verarbeitung
+      - Microservices
+    jobTitle: Senior Java Software Developer
+    period: 
+      from: 2021-11-01
+      to: 2022-10-03
+    location:
+      country: Vereinigte Staaten
+      flagFileName: flag-usa.png
+      remote: True
+    tools: [Kafka, Java 11, AWS, Postgres, Spring Boot, Kubernetes]
+    tasks:
+      - descr: Neuimplementierung von Java7 Legacy _monoliths_ zu Java11 _microservices_.
+      - descr: Schreiben Sie mehrere _Kafka_-Verbraucherproduzenten für die Streaming-Pipelines zur Benutzerinteraktion.
+      - descr: Microservices-Entwicklung mit _Spring Boot_.
+      - descr: Entwicklung benutzerdefinierter Bibliotheken für Microservices und ERP-Verarbeitungseinheiten, die dieselbe Geschäftslogik verwenden.
+      - descr: Mitglied im DE+I-Ausschuss (Säule Marketing).
+  - name: Claro
+    url: https://www.claro.com.co/institucional/
+    focusAreas: 
+      - BigData Processing
+      - Microservices
+    jobTitle: Java Software Developer
+    period: 
+      from: 2020-02-01
+      to: 2021-11-30
+    location:
+      country: Brazil 
+      flagFileName: flag-brazil.png
+      remote: True
+    tools: [Java 11, Apache Flume - Flink - Kafka - Camel, MongoDB, Spring Boot, OpenShift]
+    tasks:
+      - descr: Microservices-Entwicklung mit Spring Boot, Quarkus und Django. Einige Beispiele sind zu sehen [hier, https://github.com/VanJFlorez/flink-kafka-fraud-detection].
+      - descr: Big-Data-Verarbeitungskomponenten mit Apache Kafka, Flink, Flume und Camel.
+      - descr: Batch-Skripte und Java-Programme zur Automatisierung der Erstellung und Speicherung von Docker-Images in der Docker Hub-Cloud-Registrierung.
+      - descr: Bereitstellungen in Vorproduktionsumgebungen der Openshift Container Platform. Dazu gehören Skripte für Builds und Image-Stresstests.
+      - descr: Bieten Sie Mentoring für Junior- und Einsteigerentwickler an.
+      - descr: Nehmen Sie als technischer Experte am UI-Verbesserungsprojekt „MiClaro App“ teil.
+  - name: Zyos
+    url: https://neivor.com
+    focusAreas: 
+      - Backend-Monolith-Entwickler
+      - Serverseitiger UI-Entwickler
+    jobTitle: FullStack Software Developer
+    period:
+      from: 2019-01-01
+      to: 2020-02-28
+    location:
+      country: Kolumbien
+      flagFileName: flag-colombia.png
+      remote: False
+    tools: [EJB, JSF, Primefaces, JPA (Hibernate), Angular 9, JavaScript (ES6), Maven, Git, Apache TomCat]
+    tasks:
+      - descr: Es wurden Verbesserungen an den Kernfunktionen der Serversoftware „Edificios Davivienda“ vorgenommen.
+      - descr: Responsive _Front-End_-Software entwickeln und einige Styling-Verbesserungen implementieren
+      - descr: Mehrere _JavaScript_-Komponenten (Benachrichtigungen, Bewertungen, Snackbars) wurden von Grund auf implementiert, um die Benutzererfahrung zu verbessern.
+      - descr: Backend-Softwareentwicklung für _Mi Vivienda BCP_-Serversoftware, um Fehler in Edge-Execution-Fällen zu verstärken und zu korrigieren. Neue Funktionalitäten für die Gesamtanwendung. _Edificios Davivienda_ verfügbar [hier, https://www.edificiosdavivienda.com] und _Mi Vivienda BCP_ verfügbar [hier, https://www.miviviendabcp.com.bo].
+  - name: Centro de Pensamiento UNAL
+    url: http://pensamiento.unal.edu.co/cp-eticaanimal/
+    jobTitle: Software Engineer, Requirements Engineer
+    period:
+      from: 2018-06-30
+      to: 2018-12-31
+    location:
+      country: Bogotá
+      remote: False
+    tools: [Ruby, RubyOnRails, NGinX, PostgresSQL, Debian-Linux, Moodle, PHP, SSH, Heroku, Google Compute Engine, Git, Docker, Rancker]
+    tasks:
+      - descr: Online-Kursimplementierung mit Moodle (verfügbar [hier, https://gitlab.com/VanJFlorez/animal-modeling-ethics/tree/master/docs/4 LMS build]) und eine Forum-Webanwendung für diesen Kurs mit Thredded (verfügbar [hier, https://gitlab.com/VanJFlorez/animal-modeling-ethics/blob/master/docs/3\%20Social\%20WebApp/CP\%20etica\%20animal\%20webApp.pdf]). Vollständiges Repository [hier, https://gitlab.com/VanJFlorez/animal-modeling-ethics/].
+      - descr: Erfassung der Anforderungen, welche Softwarelösung sich besser an die Teamanforderungen anpasst.
+      - descr: Passen Sie die _Moodle_- und _Thredded_-Bereitstellungen an, um die Teamanforderungen zu erfüllen.
+  - name: Grupo Sepro
+    url: http://www.seprologistica.unal.edu.co/publicaciones
+    jobTitle: Software Developer
+    period: 
+      from: 2018-01-01
+      to: 2018-06-30
+    location:
+      country: Bogotá
+      remote: False
+    tools: [Python, Django, JavaScript, ExpressJS, Gunicorn, Apache HTTP Server, Git, VSCode, MySQL, Heroku]
+    tasks:
+      - descr: Entwarf und implementierte ein Umfrageinformationssystem, das Statistiken und Messungen über die eingereichten Antworten berechnet. Dieses Umfragesystem wurde verwendet, um die Leistung der Lieferketten für Avocado- und Zuckerrohrderivate von Cauca bis Bogota zu bewerten.
+      - descr: Koordinierte ein Team von drei Bachelor-Studenten, um die Projektziele zu erreichen. Zwei von ihnen arbeiteten in der Softwareentwicklung und der andere in der Qualitätssicherung. Verfügbar [hier, https://gitlab.com/VanJFlorez/sepro-webapp].
+education:
+  - name: Universidad Nacional de Colombia
+    degree: Softwaretechnik
+    period:
+      from: 2016-01-01
+      to: 2022-10-30
+    location:
+      city: Bogotá
+    gpa:
+      my: 4.3
+      over: 5.0
+pprojects:
+  - name: NeatPosts
+    descr: Markdown mit LaTex-Konverter für geschriebene Mathematik in HTML im akademischen Stil.
+    url: https://github.com/jcammmmm/neatposts
+    demos: 
+      - url: https://jcamilo.co/posts/neatposts
+        comment: >
+          Ein Beispiel dafür, wie Sie Ihre Informationen klar und leicht verständlich präsentieren können, ohne Ihre Leser zu verwirren.
+  - name: STL Renderer
+    descr: A WebGL application that parses and renders STL files in HTML5 canvas.
+    url: https://github.com/jcammmmm/stl-reader
+    demos: 
+      - url: https://jcamilo.co/stl-reader/index.html?shape=barz
+        comment: > 
+          Dies ist ein Live-Beispiel, das eine 3D-Visualisierung meines Commit-Verlaufs 2021 in Github zeigt. Bewegen Sie die Maus, während Sie die linke Maustaste gedrückt halten, um die Form zu verschieben. Drücken Sie beim Scrollen die Steuertaste, um hinein- oder herauszuzoomen. Scrollen Sie, um die Form vertikal zu positionieren. Scroll- und Umschalttaste, um die Form horizontal zu positionieren.
+      - url: https://jcamilo.co/stl-reader/index.html?shape=teap
+        comment: >          
+          Das Standard-Teekannen-Testmodell. Bewegen Sie die Maus, während Sie die linke Maustaste gedrückt halten, um die Form zu verschieben. Drücken Sie beim Scrollen die Steuertaste, um hinein- oder herauszuzoomen. Scrollen Sie, um die Form vertikal zu positionieren. Scroll- und Umschalttaste, um die Form horizontal zu positionieren.
+      - url: https://jcamilo.co/stl-reader/index.html?shape=cube
+        comment: >
+          Ein einfacher Würfel in 3D. Beachten Sie, wie die optische Beleuchtung funktioniert! Bewegen Sie die Maus, während Sie die linke Maustaste gedrückt halten, um die Form zu verschieben. Drücken Sie beim Scrollen die Steuertaste, um hinein- oder herauszuzoomen. Scrollen Sie, um die Form vertikal zu positionieren. Scroll- und Umschalttaste, um die Form horizontal zu positionieren.
+  - name: Multiform CV
+    descr: Ein Meta-CV-Datenformat und -Generator zur Ausgabe Ihres Lebenslaufs in anderen Formaten (responsives HTML, Tex, JSON5, Yaml, TXT).
+    url: https://github.com/jcammmmm/multiform-cv
+    demos:
+      - url: https://jcamilo.co/cv.pdf
+        comment: >
+          Diese PDF-Datei und die aktuelle Webseite haben den gleichen Inhalt. Aufgrund von Einschränkungen im PDF-Format wurden einige Inhalte beschnitten. Die vollständigste Version dieses Lebenslaufs finden Sie im YAML-Format.
+      - url: https://jcamilo.co/cv.yml
+        comment: >
+          Diese Datei enthält die Daten im YAML-Format, die zum Ausfüllen der Vorlagen verwendet werden, die PDF-, HTML-, TeX- und andere Formate generieren, die zur Verbreitung Ihres Lebenslaufs verwendet werden können.
+      - url: https://jcamilo.co/cv.mob.html
+        comment: > 
+          Die mobile Version dieser Website.
+  - name: Semi-infinite Programming with SQP
+    descr: Numerische Lösung von Chebyshev-Funktionsnäherungsproblemen als semi-infinites Problem, gelöst mit der SQP-Methode.
+    url: https://jcamilo.co/posts/chebyshev/index.html
+    demos: 
+      - url: https://jcamilo.co/posts/chebyshev/index.html
+        comment: >
+          In diesem Dokument wird eine Chebyshev-Approximation an eine reellwertige Funktion durch ein semi-infinites Programmierproblem durchgeführt. Diese Neuformulierung nutzt die für Optimierungsprobleme verfügbaren Softwaretools zur Berechnung der Näherung. Insbesondere das zur Ausführung der Optimierungsaufgabe eingesetzte Computerprogramm basiert stark auf der Methode der sequenziellen quadratischen Programmierung (SQP). Um dieses Dokument in sich geschlossen zu halten, werden die Definitionen und Techniken beschrieben, aus denen die SQP-Methode besteht. Im ersten Abschnitt wird die Problemumformung in semi-infinite Programmierbegriffe detailliert beschrieben und einige Problembeispiele dargestellt. Im folgenden Abschnitt werden die SQP-Techniken und Kernkonzepte beschrieben, die die Methode ausmachen. Im letzten Abschnitt werden die dargestellten Beispielprobleme berechnet.
+  - name: Java2Python transpiler
+    descr: ANTLR-basiertes Tool, das Java8-Code in Python3-Code transpiliert.
+    url: https://github.com/jcammmmm/JavaToPythonTranspiler
+  - name: K8s tools
+    descr: Skript, das den Prozess der Docker-Image-Erstellung und Veröffentlichung in öffentlichen Repositorys vereinfacht.
+    url: https://github.com/jcammmmm/k8stools
+  - name: Criptography Algorithms
+    descr: Sammlung von Kryptographiealgorithmen, hauptsächlich Chiffren.
+    url: https://github.com/jcammmmm/cryptographyAlgorithms
+  - name: More on github
+    descr: Auf Github sind weitere persönliche Projekte verfügbar, die jedoch nicht mehr gepflegt werden.
+    url: https://github.com/jcammmmm?tab=repositories
+socialnetworks:
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/vanjflores/
+    username: VanJFlorez
+  - name: GitHub
+    url: https://github.com/jcammmmm
+    username: VanJFlorez
+  - name: GitLab
+    url: https://gitlab.com/VanJFlorez
+    username: VanJFlorez
+certs:
+  - name: B2-Englisch-Zertifizierung (IELTS)
+    url: https://jcamilo.co/IELTS-2022.pdf
+  - name: C1-Englisch-Zertifizierung (EF)
+    url: https://www.efset.org/cert/j8ebfw
+  - name: Machine Learning with Big Data
+    url: https://www.coursera.org/account/accomplishments/certificate/8MS64GGYWDT5?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate
+  - name: Convolutional Neural Networks
+    url: https://www.coursera.org/account/accomplishments/certificate/KFN2XJC2KP92?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate
+  - name: Automate Stuff with Python
+    url: https://www.udemy.com/certificate/UC-ZHLLMBQA
+  - name: Econometrics (University)
+  - name: Micro and Macroeconomics (University)
+  - name: Economic History (University)
+skills:
+  programmingLanguages:
+    - name: Java
+      descr: Diese Technologie wurde hauptsächlich zur serverseitigen Erstellung eschäftlicher Webanwendungen eingesetzt. Bei richtiger Anwendung können Sie erweiterbare und skalierbare Systeme erstellen.
+      url: https://en.wikipedia.org/wiki/Java_(Programmiersprache)
+    - name: C++
+      descr: Die bevorzugte Sprache für Computergrafiken und Desktop-Anwendungen. Ich glaube, dass Webanwendungen aus Leistungsgründen mit dieser Art von Technologie programmiert werden sollten.
+      url: https://en.wikipedia.org/wiki/C%2B%2B
+    - name: JavaScript
+      descr: Mein bevorzugtes Tool für Client-Software in Webanwendungen. Jeder hat Zugriff auf einen Webbrowser und Webbrowser führen dies aus.
+      url: https://en.wikipedia.org/wiki/JavaScript
+    - name: TypeScript
+      descr: Mein Verständnis dieser Sprache ist, wenn ich JavaScript-Code debuggen muss und seine Abhängigkeiten TypeScript-Code haben.
+      url: https://en.wikipedia.org/wiki/TypeScript
+    - name: SQL
+      descr: Der beste Weg, Ihre strukturierten Daten abzufragen.
+      url: https://en.wikipedia.org/wiki/SQL
+    - name: Python
+      descr: Meistens zum Schreiben von Skriptcode. Ich verwende es auch als Werkzeug zum maschinellen Lernen oder als Schnittstelle für Mathematik.
+      url: https://en.wikipedia.org/wiki/Python_(Programmiersprache)
+    - name: Ruby
+      descr: Ich wurde mit dieser Technologie in die Webentwicklung eingeführt und habe damit einige Microservices geschrieben.
+      url: https://en.wikipedia.org/wiki/Ruby_(Programmiersprache)
+    - name: GNU/Bash
+      descr: E/A-Abläufe, Skripterstellung und effiziente Nutzung von Computerterminals.
+      url: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
+    - name: Charge
+      descr: Grundlegende Skripterstellung unter Windows.
+      url: https://en.wikipedia.org/wiki/Batch_file
+  frameworks:
+    - Spring Boot
+    - Quarkus 
+    - RubyOnRails 
+    - Django 
+    - EJB JSF JPA (Hibernate) PrimeFaces  
+    - React/Material-UI 
+    - Bootstrap 
+    - Android SDK 
+    - NumPy 
+    - Scikit-Learn 
+    - Pandas  
+    - Boost C++ 
+    - KNIME 
+    - Spark
+  toolsProtocols:
+    - Git 
+    - Kubernetes 
+    - Azure 
+    - Docker 
+    - ElasticSearch 
+    - Jaeger 
+    - OpenShift  
+    - Azure DevOps 
+    - Apache Flink  
+    - Apache Kafka 
+    - Apache Flume 
+    - Apache Camel 
+    - JUnit 
+    - JMS 
+    - Mockito 
+    - Visual Studio  
+    - Tensorflow 
+    - SOAP UI 
+    - GNU-Linux 
+    - MongoDB 
+    - Oracle Database 11g  
+    - SQLite 
+    - PostgreSQL 
+    - MySQL 
+    - Power Designer 
+    - Virtual Box 
+    - Linux Servers 
+    - Audacity   
+    - Moodle 
+    - Maven  
+    - Gradle 
+    - SSH clients 
+    - Heroku  
+    - Jenkins 
+    - Google Compute Engine 
+    - TortoiseSVN 
+    - \LaTeX
+  archMetodologies:
+    - Microservices 
+    - REST 
+    - Web Services 
+    - SOAP 
+    - DevOps (Azure) 
+    - Pipelining 
+    - Scrum 
+    - Good Practices (SOLID, Modularity, Design Patterns)
+abouts:
+  - In the same extent that I enjoy writting code, I also enjoy reading code, in my opinion this allows me to learn quickly and to be agile. I am constantly concerned with high quality deliverables, because they define my commitment and personality. I always listen my team opinions, for that reason I can adapt my objectives with easeness. As a member of an organization, my compasses are team goals and measurements. Finally, as a person who knows that high quality software is built with collaboration and teamwork, I enjoy to listen and to share ideas!
+  - I'm searching for new technology and engineering challenges, that takes to another level my abilities to create software easy to use and clean to deploy.
+headings:
+  profile: Profil
+  occupation: Berufe
+  interests: Interessensgebiete
+  notableJobs: Bemerkenswerte Jobs
+  yearsActive: Aktive Jahre
+  socialLinks: Sozialen Medien
+  seeAlso: Siehe auch
+  contents: Inhalt
+  recentExperience: Aktuelle Erfahrung
+  education: Ausbildung
+  personalProjects: Persönliche projekte
+  certificates: Zertifikate
+  certificatesNote1: Einige Einträge sind mit den Zertifikaten verknüpft.
+  socialMedia: Sozialen Medien
+  skills: Fähigkeiten
+  languages: Sprachen
+  spanish: Spanisch
+  notLoggedIn: Nicht eingeloggt
+  talk: Sprechen
+  contributions: Beiträge
+  createAccount: Benutzerkonto erstellen
+  login: Anmeldung
+  mainPage: Hauptseite
+  contents: Inhalt
+  currentEvents: Aktuelle Ereignisse
+  randomArticle: Zufälliger Artikel
+  aboutWikipedia: Über Wikipedia
+  contactUs: Kontaktiere uns
+  donate: Spenden
+  contribute: Beitragen
+  help: Hilfe
+  learnToEdit: Lernen Sie zu bearbeiten
+  communityPortal: Community-Portal
+  recentChanges: Kürzliche Änderungen
+  uploadFile: Datei hochladen
+  programmingLanguages: Programmiersprachen
+  framework: Rahmenwerke
+  toolsAndProtocols: Tools und Protokolle
+  architecturesAndMetodologies: Architekturen und Methoden
