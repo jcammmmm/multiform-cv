@@ -14,17 +14,17 @@ card:
     - Skeptiker
     - Mathematikleser
   interests:
-    - Name: Informatik
+    - name: Informatik
       url: https://en.wikipedia.org/wiki/Computer Science
-    - Name: Softwareentwicklung
+    - name: Softwareentwicklung
       url: https://en.wikipedia.org/wiki/Software_Development
-    - Name: Software Engineering
+    - name: Software Engineering
       url: https://en.wikipedia.org/wiki/Software_Engineering
-    - Name: Verteiltes Rechnen
+    - name: Verteiltes Rechnen
       url: https://en.wikipedia.org/wiki/Distributed_Computing
-    - Name: Computergrafik
+    - name: Computergrafik
       url: https://en.wikipedia.org/wiki/Computer_Graphics
-    - Name: Mathematik
+    - name: Mathematik
       url: https://en.wikipedia.org/wiki/Mathematics
   yearsActive: 2018-present
   cvFormats:
@@ -389,3 +389,6 @@ headings:
   framework: Rahmenwerke
   toolsAndProtocols: Tools und Protokolle
   architecturesAndMetodologies: Architekturen und Methoden
+  searchWikipedia: Wikipedia durchsuchen
+  talk: Diskussion
+  article: Artikel
