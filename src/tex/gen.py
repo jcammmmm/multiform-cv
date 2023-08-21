@@ -2,6 +2,14 @@ from re import compile
 from jinja2 import Environment, PackageLoader, select_autoescape
 from utils.formmating import format_date_period
 
+def separate_into_paragraphs(string):
+    formmated_text = ''
+    for paragraph in string.strip().split('\n'):
+        formmated_text += r'\parindent=20pt '
+        formmated_text += paragraph
+        formmated_text += '\n\n'
+    return formmated_text.strip()
+
 def decorate_task_descr(task):
     descr = task['descr']
     if descr == None:
@@ -46,6 +54,7 @@ def latex_generator(cv_data):
     )
     env.filters['decorate_task_descr'] = decorate_task_descr
     env.filters['format_date_period'] = format_date_period
+    env.filters['separate_into_paragraphs'] = separate_into_paragraphs
 
     template = env.get_template('cv-template.tex')
     return template.render(cv=cv_data)

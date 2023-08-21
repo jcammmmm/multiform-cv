@@ -3,10 +3,12 @@ name: Juan Camilo
 lastname: Flórez Vanegas
 webpage: https://jcamilo.co
 profile: >
-  Computer Systems Engineer with 5 years of experience in Software Engineering and Development Professional with proficient skills in Mathematics, Software Development, Software Architecture and Software Design. Highly motivated by reaching goals and measurements. Agile learner. Up-to-date with State of the Art in software construction and implementation techniques. He is an Engineer committed with organizations mission statements, with a great sense of responsibility, commitment and good teamwork. Can speak English and Portuguese. 
+  Computer systems engineer, software developer and computer programmer with 5 years of experience with proficient skills in debugging, mathematics, problem analysis, distributed computing and software design. He is an agile learner highly motivated by reaching goals. He is well versed in object oriented programming languages and has up-to-date skills in implementation techniques, software building and deployment.
+
+  In addition, he can understand efficiently libraries, frameworks, tools, conventions, engineering decisions and organizations businesses, since he reads with easeness software documentation from a wide range of applications which includes machine learning, computer graphics, optimization and applied mathematics. With a great sense of responsibility, commitment and good teamwork, he is committed with organization and team mission statements. He can speak spanish, english, portuguese and german.
 card:
   connector: is a
-  photofoot: Camilo in 2022
+  photofoot: Camilo in 2023
   occupations:
     - Software developer
     - Computer programmer
@@ -29,21 +31,19 @@ card:
   yearsActive: 2018-present
   cvFormats:
     - format: Mobile version
-      url: cv/cv.mob.html
+      url: cv.mob.html
     - format: PDF version
-      url: /cv/cv.pdf
+      url: cv.pdf
     - format: YAML version
-      url: /cv/cv.yml
+      url: cv.yml
     - format: TeX version
-      url: /cv/cv.tex
+      url: cv.tex
 experience:
-  - name: Logical
-    url: http://logical.com.co/
+  - name: Teradigit
+    url: http://teradigit.com.co/
     focusAreas: 
       - Graphics programming
-      - Backend Web development
-      - Frontend Web development
-      - Database Design
+      - Debugging
     jobTitle: Software Engineer and Computer Programmer (Self-employed)
     period:
       from: 2023-06-01
@@ -52,12 +52,11 @@ experience:
       country: Colombia 
       flagFileName: flag-colombia.png
       remote: False
-    tools: [C++, OpenGL, Java11, SpringBoot, Next.js, PostgreSQL]
+    tools: [C++, Java11]
     tasks:
-      - descr: Disect several computer graphics applications; ProjectM, Blender, PyMol.
-      - descr: Create a software system to track the price history of supermarkets in Bogotá.
-      - descr: Build a software system to manage work and items for chain store of retail fix.
-      - descr: Analize cicada communication with Fourier Analysis.
+      - descr: Disect ProjectM and Blender computer graphics source code.
+      - descr: Debug Apache Tomcat and RedHat Hibernate source code.
+      - descr: Implement a CPU based raytracer.
   - name: Optum
     url: https://www.optum.com/financial-services.html
     focusAreas: 
@@ -231,6 +230,9 @@ pprojects:
   - name: More on github
     descr: There are more personal projects available on github, but are not longer mantained.
     url: https://github.com/jcammmmm?tab=repositories
+  - name: QuinExtractor
+    descr: Equipment to extract saponins from Quinoa grains.
+    url: https://jcflorezv.wixsite.com/quinextractor
 socialnetworks:
   - name: LinkedIn
     url: https://www.linkedin.com/in/vanjflores/
@@ -275,9 +277,6 @@ skills:
     - name: Python
       descr: For writing script code most of the time. Also I use as a tool for maching learning or as an interface for doing mathematics.
       url: https://en.wikipedia.org/wiki/Python_(programming_language)
-    - name: Ruby
-      descr: I was introduced to web development with this technology and wrote a couple of microservices with this.
-      url: https://en.wikipedia.org/wiki/Ruby_(programming_language)
     - name: GNU/Bash
       descr: I/O flows, scripting and an efficient use of computer terminals.
       url: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
@@ -287,7 +286,6 @@ skills:
   frameworks:
     - Spring Boot
     - Quarkus 
-    - RubyOnRails 
     - Django 
     - EJB JSF JPA (Hibernate) PrimeFaces  
     - React/Material-UI 
@@ -392,3 +390,4 @@ headings:
   searchWikipedia: Search Wikipedia
   talk: Talk
   article: Article
+  lastEdit: This page was last edited on

@@ -70,7 +70,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{==cv.name==}{==cv.lastname==}{ \urlstyle{same}
     \href{mailto:==cv.email==}{==cv.email==} 
-    | \href{https://==cv.webpage==}{==cv.webpage==}
+    | \href{==cv.webpage==}{==cv.webpage==}
     | ==cv.phone==
 }
 
@@ -162,7 +162,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{==cv.headings.profile==}
-==cv.profile==
+==cv.profile|separate_into_paragraphs==
 
 % inteligencia artificial %
 % análisis de información %
@@ -173,6 +173,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{==cv.headings.recentExperience==}
 =% for exp in cv.experience %=
+    \noindent
     \runsubsection{==exp.name==}
     \focusareas{==exp.focusAreas|join(' / ')==}
     \descript{==exp.jobTitle==}

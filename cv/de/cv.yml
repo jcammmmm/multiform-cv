@@ -3,10 +3,12 @@ name: Juan Camilo
 lastname: Flórez Vanegas
 webpage: https://jcamilo.co
 profile: >
-  Computersystemingenieur mit 5 Jahren Erfahrung in Software-Engineering und -Entwicklung. Fachmann mit fundierten Kenntnissen in Mathematik, Software-Entwicklung, Software-Architektur und Software-Design. Hochmotiviert durch das Erreichen von Zielen und Messungen. Agiler Lernender. Auf dem neuesten Stand der Softwarekonstruktions- und Implementierungstechniken. Er ist ein Ingenieur, der sich für die Leitbilder von Organisationen einsetzt und über großes Verantwortungsbewusstsein, Engagement und gute Teamarbeit verfügt. Kann Englisch und Portugiesisch sprechen.
+  Computersystemingenieur, Softwareentwickler und Computerprogrammierer mit 5 Jahren Erfahrung und fundierten Kenntnissen in den Bereichen Debugging, Mathematik, Problemanalyse, verteiltes Rechnen und Softwaredesign. Er ist ein agiler Lerner, der hoch motiviert ist, Ziele zu erreichen. Er ist mit objektorientierten Programmiersprachen bestens vertraut und verfügt über aktuelle Kenntnisse in Implementierungstechniken, Softwareerstellung und Softwarebereitstellung.
+
+  Darüber hinaus kann er Programmbibliothek, Frameworks, Tools, Konventionen, technische Entscheidungen und Organisationsunternehmen effizient verstehen, da er problemlos Softwaredokumentationen aus einem breiten Spektrum von Anwendungen liest, darunter maschinelles Lernen, Computergrafik, Optimierung und Angewandte Mathematik. Mit großem Verantwortungsbewusstsein, Engagement und guter Teamarbeit engagiert er sich für Organisation und Teamleitbilder. Er kann Spanisch, Englisch und Portugiesisch.
 card:
   connector: ist ein
-  photofoot: Camilo im 2022
+  photofoot: Camilo im 2023
   occupations:
     - Softwareentwickler
     - Computerprogrammierer
@@ -29,21 +31,19 @@ card:
   yearsActive: 2018-present
   cvFormats:
     - format: Mobile version
-      url: cv/cv.mob.html
+      url: cv.mob.html
     - format: PDF version
-      url: /cv/cv.pdf
+      url: cv.pdf
     - format: YAML version
-      url: /cv/cv.yml
+      url: cv.yml
     - format: TeX version
-      url: /cv/cv.tex
+      url: cv.tex
 experience:
-  - name: Logical
-    url: http://logical.com.co/
+  - name: Teradigit
+    url: http://teradigit.com.co/
     focusAreas: 
       - Grafikprogrammierung
-      - Backend-Webentwicklung
-      - Frontend-Webentwicklung
-      - Datenbank Design
+      - Debuggen
     jobTitle: Software Engineer and Computer Programmer (Self-employed)
     period:
       from: 2023-06-01
@@ -52,12 +52,11 @@ experience:
       country: Kolumbien
       flagFileName: flag-colombia.png
       remote: False
-    tools: [C++, OpenGL, Java11, SpringBoot, Next.js, PostgreSQL]
+    tools: [C++, Java11]
     tasks:
-      - descr: Mehrere Computergrafikanwendungen zerlegen; ProjectM, Blender, PyMol.
-      - descr: Erstellen Sie ein Softwaresystem, um die Preisentwicklung von Supermärkten in Bogotá zu verfolgen.
-      - descr: Erstellen Sie ein Softwaresystem zur Verwaltung von Arbeit und Artikeln für Filialgeschäfte oder Einzelhandelsgeschäfte.
-      - descr: Analysieren Sie die Zikadenkommunikation mit der Fourier-Analyse.
+      - descr: Zerlegen den Computergrafik-Quellcode von ProjectM und Blender.
+      - descr: Debuggen den Apache Tomcat und RedHat Hibernate Quellcode.
+      - descr: Implementieren Sie einen CPU-basierten Raytracer.
   - name: Optum
     url: https://www.optum.com/financial-services.html
     focusAreas: 
@@ -231,6 +230,9 @@ pprojects:
   - name: More on github
     descr: Auf Github sind weitere persönliche Projekte verfügbar, die jedoch nicht mehr gepflegt werden.
     url: https://github.com/jcammmmm?tab=repositories
+  - name: QuinExtractor
+    descr: Ausrüstung zur Extraktion von Saponinen aus Quinoa-Körnern.
+    url: https://jcflorezv.wixsite.com/quinextractor
 socialnetworks:
   - name: LinkedIn
     url: https://www.linkedin.com/in/vanjflores/
@@ -275,9 +277,6 @@ skills:
     - name: Python
       descr: Meistens zum Schreiben von Skriptcode. Ich verwende es auch als Werkzeug zum maschinellen Lernen oder als Schnittstelle für Mathematik.
       url: https://en.wikipedia.org/wiki/Python_(Programmiersprache)
-    - name: Ruby
-      descr: Ich wurde mit dieser Technologie in die Webentwicklung eingeführt und habe damit einige Microservices geschrieben.
-      url: https://en.wikipedia.org/wiki/Ruby_(Programmiersprache)
     - name: GNU/Bash
       descr: E/A-Abläufe, Skripterstellung und effiziente Nutzung von Computerterminals.
       url: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
@@ -286,10 +285,9 @@ skills:
       url: https://en.wikipedia.org/wiki/Batch_file
   frameworks:
     - Spring Boot
-    - Quarkus 
-    - RubyOnRails 
-    - Django 
     - EJB JSF JPA (Hibernate) PrimeFaces  
+    - Quarkus 
+    - Django
     - React/Material-UI 
     - Bootstrap 
     - Android SDK 
@@ -392,3 +390,4 @@ headings:
   searchWikipedia: Wikipedia durchsuchen
   talk: Diskussion
   article: Artikel
+  lastEdit: Diese Seite wurde zuletzt am

@@ -7,8 +7,8 @@
 [ ] Add side _projects_ to your ***curriculum***
 
 About  
-=======================================
-Python script that generate Juan Camilo's CV in several template formats    
+===========================================================
+Python script that generate Juan Camilo's CV in several template formats and languages 
 but with the same content.
 The formats are:
 - LaTeX
@@ -21,18 +21,19 @@ for this version) in your templates.
 
 
 Environment setup 
-=======================================
+===========================================================
 1. Install `python`
 2. Install `pip`
 3. Install `venv`
 
 Usage  
-=======================================
-Edit the main source of truth aka. Then execute the provided python script as follows:
+===========================================================
+Edit the YAML files in each language. Then execute the provided python script as follows:
 
 Linux/Debian
-------------------------
-1. Create your environment: ```$ python3 -m venv env```
+---------------------------------------
+1. Create your environment if you did not create already one:
+	 ```$ python3 -m venv env```
 2. Activate your environment:    
 	```$ source env/bin/activate```
 3. Install script dependencies:
@@ -45,7 +46,7 @@ Linux/Debian
 	```$ deactivate```
 
 MacOS
-------------------------
+---------------------------------------
 3. Create your environment:    
 	`$ python3 -m venv env`
 4. Activate your environment:     
@@ -54,7 +55,7 @@ MacOS
 	`$ deactivate`
 
 Windows
-------------------------
+---------------------------------------
 2. `$> cd multiform-cv`
 3. `$> python -m venv env`
 4. `$> env\Scripts\activate.bat`
@@ -77,4 +78,3 @@ https://jinja.palletsprojects.com/en/3.1.x/api/#custom-filters
 https://jinja.palletsprojects.com/en/3.1.x/templates/#builtin-filters
 ## PyYAML
 https://pyyaml.org/wiki/PyYAMLDocumentation
-

@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[papersize={216mm, 510mm}, hmargin=1.25cm, vmargin=0.75cm]{geometry}
+\usepackage[papersize={216mm, 530mm}, hmargin=1.25cm, vmargin=0.75cm]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
 

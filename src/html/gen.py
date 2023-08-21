@@ -2,6 +2,14 @@ from re import compile
 from jinja2 import Environment, PackageLoader
 from utils.formmating import format_date_period
 
+def separate_into_paragraphs(string):
+    formmated_text = ''
+    for paragraph in string.strip().split('\n'):
+        formmated_text += '<p>'
+        formmated_text += paragraph
+        formmated_text += '</p>'
+    return formmated_text
+
 def to_valid_id(string):
     return '_'.join(string.split(' '))
 
@@ -46,6 +54,7 @@ def generator(cv_data, template_name):
     env.filters['to_valid_id'] = to_valid_id
     env.filters['format_date_period'] = format_date_period
     env.filters['decorate_task_descr'] = decorate_task_descr
+    env.filters['separate_into_paragraphs'] = separate_into_paragraphs
 
     template = env.get_template(template_name)
     return template.render(cv=cv_data)
